@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <title>mystery</title>
+    <style>
+        *{
+            font-family: "Ubuntu", sans-serif;
+        }
+    .backgroundvideo{
+    
+    position:fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(4px);
+    }
+    .pics{
+        position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    row-gap: 80px;
+    top: 40%;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5%;
+
+}
+img{
+        top: 10%;
+        width: 200px;
+        height: 250px;
+        border: 4px solid rgb(252, 186, 186);
+        box-shadow: 0 0 15px  red;
+    }
+    p{
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        border: 2px solid black;
+        box-shadow: 0 0 10px white;
+    }
+    .pics{
+        padding-top: 10%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 25px;
+        
+    }
+    .pics p{
+        margin-top: 0%;
+    }
+    p:hover{
+        border: 2px solid black;
+    }
+    img:hover{
+        border: 4px solid rgb(212, 245, 163);
+        cursor: pointer;
+        box-shadow: 0 0 20px rgb(217, 246, 173);
+        transform: scale(1.14);
+    }
+    .text{
+            position: relative;
+            color: white;
+        }
+        .container{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        
+        transform: translate(0,-200%);
+
+        }
+        .show-container{
+        transform: translate(0,0);
+            
+        }
+        .container{
+            transition: 0.4s;
+        }
+        .container2{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+            
+        transform: translate(0,-200%);
+
+        }
+        .show-container2{
+        transform: translate(0,0);
+            
+        }
+        .container2{
+            transition: 0.4s;
+        }
+        .container3{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+            
+        transform: translate(0,-200%);
+
+        }
+        .show-container3{
+        transform: translate(0,0);
+            
+        }
+        .container3{
+            transition: 0.4s;
+        }
+        .container4{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+            
+        transform: translate(0,-200%);
+
+        }
+        .show-container4{
+        transform: translate(0,0);
+            
+        }
+        .container4{
+            transition: 0.4s;
+        }
+        .container5{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 37%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        
+        transform: translate(0,-200%);
+
+        }
+        .show-container5{
+        transform: translate(0,0);
+            
+        }
+        .container5{
+            transition: 0.4s;
+        }
+        .container6{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+            
+        transform: translate(0,-200%);
+
+        }
+        .show-container6{
+        transform: translate(0,0);
+            
+        }
+        .container6{
+            transition: 0.4s;
+        }
+        .container7{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        
+        transform: translate(0,-300%);
+
+        }
+        .show-container7{
+        transform: translate(0,0);
+            
+        }
+        .container7{
+            transition: 0.4s;
+        }
+        .container8{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        
+        transform: translate(0,-300%);
+
+        }
+        .show-container8{
+        transform: translate(0,0);
+            
+        }
+        .container8{
+            transition: 0.4s;
+        }
+        .container9{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        
+        transform: translate(0,-300%);
+
+        }
+        .show-container9{
+        transform: translate(0,0);
+            
+        }
+        .container9{
+            transition: 0.4s;
+        }
+        .text{
+            padding-top: 2%;
+        
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        button{
+            margin-inline: 10px;
+        }
+        .container img{
+            border: 4px solid white;
+        }
+        .container2 img{
+            border: 4px solid white;
+        }
+        .container3 img{
+            border: 4px solid white;
+        }
+        .container4 img{
+            border: 4px solid white;
+        }
+        .container5 img{
+            border: 4px solid white;
+        }
+        .container6 img{
+            border: 4px solid white;
+        }
+        .container7 img{
+            border: 4px solid white;
+        }
+        .container8 img{
+            border: 4px solid white;
+        }
+        .container9 img{
+            border: 4px solid white;
+        }
+        .watchbutton button{
+            line-height: 20px;
+            border: 2px solid black;
+            font-weight: bold;
+            background-color: lightgreen;
+            width: 200px;
+        }
+        button:hover{
+    background-color: rgb(84, 235, 235);
+}
+        .text h3{
+            color: greenyellow;
+        
+        }
+    .text h2
+    {   font-size: 50px;
+        color: darkcyan;
+        font-weight: bolder;
+    }
+    .closebutton {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton2 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton3 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton4 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+    margin-top: 30px;
+
+    }
+    .closebutton5 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+
+    }
+    .closebutton6 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton7 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton8 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton9 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+   .poster{
+    margin-top:2%;
+    height: 370px;
+    width: 390px;
+   }
+   .header{
+        position: absolute;
+        top: 0.5%;
+        color: black;
+        font-size: 20px;
+        display: flex;
+        font-weight: bolder;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        filter: blur(0);
+        z-index: 1;
+       left: 19%;
+        background-color: aqua;
+        }
+     .poster:hover{
+        transform: scale(1);
+        box-shadow: 0 0 15px  red;
+    }
+    button{
+        box-shadow: 0 0 5px  white;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">NOTE: PLEASE DOWNLOAD THE MOVIE TO ACCESS MULTIPLE AUDIO TRACK</div>
+    <div >
+        <video class="backgroundvideo" autoplay loop muted  src="https://videos.pexels.com/video-files/6338333/6338333-uhd_2560_1440_24fps.mp4"  ></video>
+    </div>
+    <div class="pics">
+        <div><img class="HobbsShaw" src="https://static.rogerebert.com/uploads/movie/movie_poster/zodiac-2007/large_nkUbb208RW6LTpj1A4GrbE4Oub5.jpg" alt="" ><p>Zodiac</p>
+        </div>
+        <div> <img  class="JohnWick" src="https://www.hancinema.net/photos/fullsizephoto964389.jpg" alt="">
+        <p>Burning</p></div>
+        <div><img  class="MadMaxFuryRoad"  src="https://media-cache.cinematerial.com/p/500x/8idfhoyb/knives-out-movie-poster.jpg?v=1606027480" alt=""><p>Knives Out</p>
+        </div>
+        <div > <img  class="Mrandms" src="https://ih1.redbubble.net/image.1590005732.8960/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="">
+        <p>Enola Holmes</p></div>
+        <div ><img  class="civil"  src="https://www.filmibeat.com/ph-big/2015/07/drishyam-poster_143694542700.jpg" alt="">
+        <p> Drishyam</p></div>
+        <div ><img   class="three" src="https://www.newdvdreleasedates.com/images/posters/large/prisoners-2013-08.jpg" alt=""><p>Prisoners </p>
+            
+        </div>
+
+        <div > <img  class="Kandd" src="https://www.bestmovieposters.co.uk/wp-content/uploads/2019/01/j5WmzZOM.jpeg" alt="">
+            <p>Sicario
+            </p></div>
+            <div ><img  class="theexp" src="https://i.pinimg.com/originals/8c/ef/2d/8cef2d91bde62df74e4d785963d11a82.jpg" alt="">
+            <p>Escape from Alcatraz</p></div>
+            <div ><img  class="Extraction" src="https://picfiles.alphacoders.com/351/351902.jpg" alt=""><p>The Wailing</p>
+
+                    <div class="container">
+                    <img class="poster" src="https://image.tmdb.org/t/p/original/41pke1VcV9rI94RmlThLiceIW8O.jpg" alt=""  >
+                    <div class="text">
+                    <h1>
+                    ABOUT THE MOVIE
+                    </h1>
+                    <h2>Zodiac</h2>
+                    <h3>
+                        The Zodiac Killer terrorizes San Francisco in the 1960s and '70s.<br>
+                    Release date: July 20, 2007<br>
+                    Director:  David Fincher<br>
+                    </h3>
+                    <div class="watchbutton">
+                    <a href="https://drive.google.com/file/d/1aO-1t0tAQzlxst4rkHkkQdsUa43AxtgA/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                    </div>
+                    <div class="close">
+                    <button class="closebutton">CLOSE</button> </a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container2">
+                        <img class="poster" src="https://4.bp.blogspot.com/-EPeesXHADH0/W78yE-ztrII/AAAAAAAACYw/v2l5m3q4QDQ5vzWYNmsK31BDjz1rkPjtACLcBGAs/w1200-h630-p-k-no-nu/Burning_%2528Korean_Movie%2529-P1.jpg" alt=""  >
+                        <div class="text">
+                        <h1>
+                        ABOUT THE MOVIE
+                        </h1>
+                        <h2>Burning</h2>
+                        <h3>
+                            Hae-mi introduces Jong-soo to Ben, who proceeds to tell Jong-soo about his unique hobby.  <br>
+                        Release date:  October 27, 2018<br>
+                        Director:   Lee Chang-dong<br>
+                        
+                        
+                        </h3>
+                        
+                        <div class="watchbutton">
+                        <a href="https://drive.google.com/file/d/1WqSqXz1R-_sWhZy7BmODrt2ih7js7jhk/view?usp=sharing"> <button> WATCH ONLINE OR DOWNLOAD</button> </a>
+                        </div>
+                        <div class="close2">
+                        <button class="closebutton2">CLOSE</button> </a>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="container3">
+                            <img class="poster" src="https://www.filmandtvnow.com/wp-content/uploads/2019/09/Knives-Out-poster.jpg" alt=""  >
+                            <div class="text">
+                            <h1>
+                            ABOUT THE MOVIE
+                            </h1>
+                            <h2>Knives Out</h2>
+                            <h3>
+                                A detective sifts through a web of lies while questioning a dead novelist's dysfunctional family. <br>
+                            Release date: November 27, 2019<br>
+                            Director:   Rian Johnson<br>
+                            </h3>
+                            <div class="watchbutton">
+                            <a href="https://drive.google.com/file/d/1225ySLRNRhV8u3_Mw21qjeqkb1r973pZ/view?usp=sharing"> <button> WATCH ONLINE OR DOWNLOAD</button> </a>
+                            </div>
+                            <div class="close3">
+                            <button class="closebutton3">CLOSE</button> </a>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="container4">
+                                <img class="poster" src="https://www.tvmovie.de/assets/2022/10/12/91063-enola-holmes-2.jpg"  >
+                                <div class="text">
+                                <h1>
+                                ABOUT THE MOVIE
+                                </h1>
+                                <h2>Enola Holmes</h2>
+                                <h3>
+                                    The intrepid sister of Sherlock Holmes sets out to find their missing mother.<br>
+                                Release date: September 23, 2020<br>
+                                Director:   Harry Bradbeer<br>
+                                </h3>
+                                <div class="watchbutton">
+                                <a href="https://drive.google.com/file/d/1JNdUhpYdwWYkOcfU8UCCsmS1-zMG9nNf/view?usp=sharing"> <button> WATCH ONLINE OR DOWNLOAD</button> </a>
+                                </div>
+                                <div class="close4">
+                                <button class="closebutton4">CLOSE</button> </a>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="container5">
+                                    <img class="poster" src="http://v3img.voot.com/kimg/kimg/59a297733c884b8fb45cbc7b2f59b75c_1280X720.jpg"  >
+                                    <div class="text">
+                                    <h1>
+                                    ABOUT THE MOVIE
+                                    </h1>
+                                    <h2>Drishyam</h2>
+                                    <h3>
+                                        A man tries to save his family from the dark side of the law after they commit an unexpected crime.<br>
+                                    Release date:  July 31, 2015<br>
+                                    Director:  Nishikant Kamat<br>
+                                    </h3>
+                                    <div class="watchbutton">
+                                    <a href="https://drive.google.com/file/d/1FjK-18rc6gTx-gbSBGbM1ETTeF8Sq9Kt/view?usp=sharing"> <button > WATCH ONLINE OR DOWNLOAD</button> </a>
+                                    </div>
+                                    <div class="close5">
+                                    <button class="closebutton5">CLOSE</button> </a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="container6">
+                                        <img class="poster" src="https://otakukart.com/wp-content/uploads/2021/10/Prisoners-Ending-explained1-1024x576.jpg"  >
+                                        <div class="text">
+                                        <h1>
+                                        ABOUT THE MOVIE
+                                        </h1>
+                                        <h2>Prisoners </h2>
+                                        <h3>
+                                            A desperate father takes the law into his own hands after police fail to find two kidnapped girls.<br>
+                                        Release date: September 27, 2013<br>
+                                        Director:  Denis Villeneuve<br>
+                                        </h3>
+                                        <div class="watchbutton">
+                                        <a href="https://drive.google.com/file/d/1xl3QsU-vajdmnEJaiBzoXDRXK4IfG4Bs/view?usp=sharing"> <button> WATCH ONLINE OR DOWNLOAD</button> </a>
+                                        </div>
+                                        <div class="close6">
+                                        <button class="closebutton6">CLOSE</button> </a>
+                                        </div>
+                                        </div>
+                                        </div>       
+                                        <div class="container7">
+                                            <img class="poster" src="https://c4.wallpaperflare.com/wallpaper/759/950/484/movie-sicario-wallpaper-preview.jpg"  >
+                                            <div class="text">
+                                            <h1>
+                                            ABOUT THE MOVIE
+                                            </h1>
+                                            <h2>Sicario</h2>
+                                            <h3>
+                                                A task force travels across the U.S.-Mexican border, using one cartel boss to flush out another. <br>
+                                            Release date:  October 9, 2015<br>
+                                            Director:   Denis Villeneuve<br>
+                                            </h3>
+                                            <div class="watchbutton">
+                                            <a href="https://drive.google.com/file/d/1VNVAX2nAKP4XAgMe1XByDchjlHNRZLkS/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                            </div>
+                                            <div class="close7">
+                                            <button class="closebutton7">CLOSE</button> </a>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        <div class="container8">
+                                                <img class="poster" src="https://theactionelite.com/wp-content/uploads/2020/06/1eb4ca9d-a18d-4a67-a4aa-86c912d1a446.jpg"  >
+                                                <div class="text">
+                                                <h1>
+                                                ABOUT THE MOVIE
+                                                </h1>
+                                                <h2>Escape from Alcatraz</h2>
+                                                <h3>
+                                                    Frank Morris (Clint Eastwood) and two brothers plan their 1962 escape from the rock-island prison.<br>
+                                                Release date:  June 22, 1979<br>
+                                                Director:    Don Siegel<br>
+                                                </h3>
+                                                <div class="watchbutton">
+                                                <a href="https://drive.google.com/file/d/14JSmDuqCnNYubN42O3Ggh7sbgKAsgYMV/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                </div>
+                                                <div class="close8">
+                                                <button class="closebutton8">CLOSE</button> </a>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <div class="container9">
+                                                    <img class="poster" src="https://1.bp.blogspot.com/-ZRfR6YWS7yU/WFN1aOv3c9I/AAAAAAAAC4Q/VqcYEKgboLITab1THl4BbelvotwhXbwDgCLcB/s1600/PhotoGrid_1481811200963.jpg"  >
+                                                    <div class="text">
+                                                    <h1>
+                                                    ABOUT THE MOVIE
+                                                    </h1>
+                                                    <h2>The Wailing</h2>
+                                                    <h3>
+                                                        Suspicion leads to hysteria when rural villagers link a series of murders to a mysterious stranger. <br>
+                                                    Release date: May 20, 2016<br>
+                                                    Director:  Na Hong-jin<br>
+                                                    </h3>
+                                                    <div class="watchbutton">
+                                                    <a href="https://drive.google.com/file/d/1XUKk_ETgfRo7UmP2OVoahtS1F_aQD6TZ/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                    </div>
+                                                    <div class="close9">
+                                                    <button class="closebutton9">CLOSE</button> </a>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+        
+</body>
+    <script>
+        const has = document.querySelector(".HobbsShaw");
+        const container = document.querySelector(".container");
+        const close = document.querySelector(".closebutton");
+        has.addEventListener("click",function(){
+        container.classList.add("show-container");
+    });
+    close.addEventListener("click",function(){
+        container.classList.remove("show-container");
+    });
+    const jk = document.querySelector(".JohnWick");
+        const container2 = document.querySelector(".container2");
+        const close2 = document.querySelector(".closebutton2");
+        jk.addEventListener("click",function(){
+        container2.classList.add("show-container2");
+    });
+    close2.addEventListener("click",function(){
+        container2.classList.remove("show-container2");
+    });
+
+    const mf = document.querySelector(".MadMaxFuryRoad");
+        const container3 = document.querySelector(".container3");
+        const close3 = document.querySelector(".closebutton3");
+        mf.addEventListener("click",function(){
+        container3.classList.add("show-container3");
+    });
+    close3.addEventListener("click",function(){
+        container3.classList.remove("show-container3");
+    });
+    const mm = document.querySelector(".Mrandms");
+        const container4 = document.querySelector(".container4");
+        const close4 = document.querySelector(".closebutton4");
+        mm.addEventListener("click",function(){
+        container4.classList.add("show-container4");
+    });
+    close4.addEventListener("click",function(){
+        container4.classList.remove("show-container4");
+    });
+    const civil = document.querySelector(".civil");
+        const container5 = document.querySelector(".container5");
+        const close5 = document.querySelector(".closebutton5");
+        civil.addEventListener("click",function(){
+        container5.classList.add("show-container5");
+    });
+    close5.addEventListener("click",function(){
+        container5.classList.remove("show-container5");
+    });
+    const three = document.querySelector(".three");
+        const container6 = document.querySelector(".container6");
+        const close6 = document.querySelector(".closebutton6");
+        three.addEventListener("click",function(){
+        container6.classList.add("show-container6");
+    });
+    close6.addEventListener("click",function(){
+        container6.classList.remove("show-container6");
+    });
+    
+    const Kanddd = document.querySelector(".Kandd");
+        const container7 = document.querySelector(".container7");
+        const close7 = document.querySelector(".closebutton7");
+        Kanddd.addEventListener("click",function(){
+        container7.classList.add("show-container7");
+    });
+    close7.addEventListener("click",function(){
+        container7.classList.remove("show-container7");
+    });
+    
+    const exp = document.querySelector(".theexp");
+        const container8 = document.querySelector(".container8");
+        const close8 = document.querySelector(".closebutton8");
+        exp.addEventListener("click",function(){
+        container8.classList.add("show-container8");
+    });
+    close8.addEventListener("click",function(){
+        container8.classList.remove("show-container8");
+    });
+    
+    const ext = document.querySelector(".Extraction");
+        const container9 = document.querySelector(".container9");
+        const close9 = document.querySelector(".closebutton9");
+        ext.addEventListener("click",function(){
+        container9.classList.add("show-container9");
+    });
+    close9.addEventListener("click",function(){
+        container9.classList.remove("show-container9");
+    });
+
+    </script>
+</html>

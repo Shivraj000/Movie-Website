@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <title>drama</title>
+    <style>
+        *{
+            font-family: "Ubuntu", sans-serif;
+        }
+    .backgroundvideo{
+    
+    position:fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(8px);
+
+    }
+    .pics{
+        position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 20px;
+    row-gap: 80px;
+    top: 40%;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5%;
+}
+.poster:hover{
+    
+    box-shadow: 0 0 15px  red;
+    transform: scale(1);
+}
+img{
+        top: 10%;
+        width: 200px;
+        height: 250px;
+        border: 4px solid rgb(252, 186, 186);
+        box-shadow: 0 0 15px  red;
+    }
+    p{
+        background-color: white;
+        color: black;
+        font-weight: bolder;
+        border: 2px solid black;
+    }
+    .pics{
+        padding-top: 10%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 25px;
+    }
+    .pics p{
+        margin-top: 0px;
+    }
+    p:hover{
+        border: 2px solid black;
+    }
+    img:hover{
+        border: 4px solid rgb(212, 245, 163);
+        cursor: pointer;
+        box-shadow: 0 0 20px rgb(217, 246, 173);
+        transform: scale(1.14);
+    }
+    .text{
+            position: relative;
+            color: white;
+        }
+        .container{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container{
+        transform: translate(0,0);
+            
+        }
+        .container{
+            transition: 0.4s;
+        }
+        .container2{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container2{
+        transform: translate(0,0);
+            
+        }
+        .container2{
+            transition: 0.4s;
+        }
+        .container3{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container3{
+        transform: translate(0,0);
+            
+        }
+        .container3{
+            transition: 0.4s;
+        }
+        .container4{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container4{
+        transform: translate(0,0);
+            
+        }
+        .container4{
+            transition: 0.4s;
+        }
+        .container5{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 37%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container5{
+        transform: translate(0,0);
+            
+        }
+        .container5{
+            transition: 0.4s;
+        }
+        .container6{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container6{
+        transform: translate(0,0);
+            
+        }
+        .container6{
+            transition: 0.4s;
+        }
+        .container7{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+
+        }
+        .show-container7{
+        transform: translate(0,0);
+            
+        }
+        .container7{
+            transition: 0.4s;
+        }
+        .container8{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+
+        }
+        .show-container8{
+        transform: translate(0,0);
+            
+        }
+        .container8{
+            transition: 0.4s;
+        }
+        .container9{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+
+
+        }
+        .show-container9{
+        transform: translate(0,0);
+            
+        }
+        .container9{
+            transition: 0.4s;
+        }
+        .text{
+            padding-top: 2%;
+        
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        button{
+            margin-inline: 10px;
+        }
+        .container img{
+            border: 4px solid white;
+        }
+        .container2 img{
+            border: 4px solid white;
+        }
+        .container3 img{
+            border: 4px solid white;
+        }
+        .container4 img{
+            border: 4px solid white;
+        }
+        .container5 img{
+            border: 4px solid white;
+        }
+        .container6 img{
+            border: 4px solid white;
+        }
+        .container7 img{
+            border: 4px solid white;
+        }
+        .container8 img{
+            border: 4px solid white;
+        }
+        .container9 img{
+            border: 4px solid white;
+        }
+        .watchbutton button{
+            line-height: 20px;
+            border: 2px solid black;
+            font-weight: bold;
+            background-color: lightgreen;
+            width: 200px;
+        }
+        button:hover{
+    background-color: rgb(84, 235, 235);
+}
+        .text h3{
+            color: greenyellow;
+           
+        }
+    .text h2
+    {   font-size: 40px;
+        color: darkcyan;
+        font-weight: bolder;
+    }
+    .container6 h2{
+        font-size: 35px;
+    }
+    .closebutton {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton2 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton3 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton4 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton5 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton6 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton7 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton8 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton9 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+   .poster{
+    margin-top:2%;
+    height: 370px;
+    width: 390px;
+   }
+   .header{
+        position: absolute;
+        top: 0.5%;
+        color: black;
+        font-size: 20px;
+        display: flex;
+        font-weight: bolder;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        filter: blur(0);
+        z-index: 1;
+        left: 19%;
+        background-color: aqua;
+        }
+        button{
+        box-shadow: 0 0 5px  white;
+    }
+    p{
+        box-shadow: 0 0 10px black;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">NOTE: PLEASE DOWNLOAD THE MOVIE TO ACCESS MULTIPLE AUDIO TRACK</div>
+
+    <div >
+        <video class="backgroundvideo" autoplay loop muted  src="https://assets.mixkit.co/videos/46353/46353-720.mp4"  ></video>
+    </div>
+    <div class="pics">
+        <div ><img class="KillersoftheFlowerMoon" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/05/killers-of-the-flower-moon-movie-poster.jpg" alt="" >   <p>Killers of the Flower Moon</p>
+        </div>
+        <div > <img  class="RequiemforaDream" src="https://image.tmdb.org/t/p/original/nOd6vjEmzCT0k4VYqsA2hwyi87C.jpg" alt="">
+        <p>Requiem for a Dream</p></div>
+        <div> <img  class="AmericanPsycho"  src="https://image.tmdb.org/t/p/original/i3ZBZltw103y5hBCyq1yL4sOXRE.jpg" alt=""><p>American Psycho</p>
+        </div>
+        <div > <img  class="ScentofaWoman"  src="https://image.tmdb.org/t/p/original/yzNuWdCnwEAwthvnqEruggEfCS0.jpg" alt="">
+        <p>Scent of a Woman</p></div>
+        <div ><img  class="WhatsEatingGilbertGrape" src="https://ilarge.lisimg.com/image/5579610/1000full-serpico-(1973)-poster.jpg" alt="">
+        <p>Serpico
+        </p></div>
+        <div><img   class="once"   src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2021/08/IMG_2935-scaled.jpeg" alt=""><p>Once Upon a Time in Hollywood</p>
+            
+        </div>
+
+        <div > <img class="Bombshell"  src="https://popcornusa.s3.amazonaws.com/movies/650/12959-5874-Bombshel.jpg" alt="">
+            <p>Bombshell
+            </p></div>
+            <div ><img  class="redem"  src="https://irs.www.warnerbros.com/gallery-jpeg/the_shawshank_redemption_posterlarge_0-675188670.jpg" alt="">
+            <p>The Shawshank Redemption</p></div>
+            <div ><img class="PulpFiction"  src="https://i.pinimg.com/originals/b3/87/9a/b3879a322f8317b4a48d90ebc5e8988a.jpg" alt=""><p>Pulp Fiction</p>
+        
+
+
+
+
+
+
+                <div class="container">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w1280/fn0OTgE3pPdD7SUCKpowb8WngkL.jpg" alt=""  >
+                    <div class="text">
+                    <h1>
+                    ABOUT THE MOVIE
+                    </h1>
+                    <h2>Killers of the Flower Moon</h2>
+                    <h3>
+                        Members of the oil-wealthy Osage Nation are murdered under mysterious circumstances in the 1920s.    <br>
+                    Release date: October 20, 2023<br>
+                    Director:   Martin Scorsese<br>
+                    </h3>
+                    <div class="watchbutton">
+                    <a href="https://drive.google.com/file/d/1L64ZbmC7Eq5yxcEGbEikbai8_m291X6d/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                    </div>
+                    <div class="close">
+                    <button class="closebutton">CLOSE</button> </a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container2">
+                        <img class="poster" src="https://media.senscritique.com/media/000005725792/1200/Requiem_for_a_Dream.jpg" alt=""  >
+                        <div class="text">
+                        <h1>
+                        ABOUT THE MOVIE
+                        </h1>
+                        <h2>Requiem for a Dream</h2>
+                        <h3>
+                            Brooklynites (Ellen Burstyn, Jared Leto, Jennifer Connelly) want to better their lives.  <br>
+                        Release date:  December 15, 2000<br>
+                        Director:   Darren Aronofsky<br>
+                        </h3>
+                        <div class="watchbutton">
+                        <a href="https://drive.google.com/file/d/1JNSc8YcL8aLTIGv9L5Q1NpEdNu41BGg5/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                        </div>
+                        <div class="close2">
+                        <button class="closebutton2">CLOSE</button> </a>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="container3">
+                            <img class="poster" src="https://image.tmdb.org/t/p/w1280/oFDPh2ilXgJnTFgT3p8bycs1xds.jpg" alt=""  >
+                            <div class="text">
+                            <h1>
+                            ABOUT THE MOVIE
+                            </h1>
+                            <h2>American Psycho</h2>
+                            <h3>
+                                An insane '80s-era yuppie (Christian Bale) indulges in kinky sex and mayhem.  <br>
+                            Release date: July 17, 2020<br>
+                            Director:   Mary Harron<br>
+                            </h3>
+                            <div class="watchbutton">
+                            <a href="https://drive.google.com/file/d/1-W-LRP630MMYXuTvXcaK17n9JrOwzVb1/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                            </div>
+                            <div class="close3">
+                            <button class="closebutton3">CLOSE</button> </a>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="container4">
+                                <img class="poster" src="https://static.cinemagia.ro/img/db/movie/00/28/37/scent-of-a-woman-729428l.jpg"  >
+                                <div class="text">
+                                <h1>
+                                ABOUT THE MOVIE
+                                </h1>
+                                <h2>Scent of a Woman</h2>
+                                <h3>
+                                    Blind ex-colonel (Al Pacino) takes his preppie guide (Chris O'Donnell) to New York. <br>
+                                Release date: November 5, 2013<br>
+                                Director:   Martin Brest<br>
+                                </h3>
+                                <div class="watchbutton">
+                                <a href="https://drive.google.com/file/d/17Iu1hBuRrlthdZz-jtucraZWgj9ybLah/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                </div>
+                                <div class="close4">
+                                <button class="closebutton4">CLOSE</button> </a>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="container5">
+                                    <img class="poster" src="https://i-viaplay-com.akamaized.net/viaplay-prod/137/368/1626937631-a12b1528fcadc2cd0494a86f6c718e31aab086c3.jpg?width=1600&height=900"  >
+                                    <div class="text">
+                                    <h1>
+                                    ABOUT THE MOVIE
+                                    </h1>
+                                    <h2>Serpico</h2>
+                                    <h3>
+                                        New York Detective Frank Serpico (Al Pacino) exposes corruption seen while working under cover. <br>
+                                    Release date:   December 5, 1973<br>
+                                    Director:  Sidney Lumet<br>
+                                    </h3>
+                                    <div class="watchbutton">
+                                    <a href="https://drive.google.com/file/d/1QnRDYcCJJvS9iQFItNAtRPFB7j-TZjxe/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                    </div>
+                                    <div class="close5">
+                                    <button class="closebutton5">CLOSE</button> </a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="container6">
+                                        <img class="poster" src="https://images2.alphacoders.com/102/thumb-1920-1021836.jpg"  >
+                                        <div class="text">
+                                        <h1>
+                                        ABOUT THE MOVIE
+                                        </h1>
+                                        <h2>Once Upon a Time in Hollywood</h2>
+                                        <h3>
+                                            A TV star and his longtime stunt double make their way around a changing industry in 1969 Hollywood. <br>
+                                        Release date:  August 15, 2019<br>
+                                        Director:   Quentin Tarantino<br>
+                                        </h3>
+                                        <div class="watchbutton">
+                                        <a href="https://drive.google.com/file/d/1t9O7DT1j1aFlbqJGpLuqRWdd5k5yEHtf/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                        </div>
+                                        <div class="close6">
+                                        <button class="closebutton6">CLOSE</button> </a>
+                                        </div>
+                                        </div>
+                                        </div>       
+                                        <div class="container7">
+                                            <img class="poster" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/11/Bombshell-movie-poster.jpg"  >
+                                            <div class="text">
+                                            <h1>
+                                            ABOUT THE MOVIE
+                                            </h1>
+                                            <h2>Bombshell</h2>
+                                            <h3>
+                                                The provocative real story of three strong newswomen who stand up to the man who made them famous.<br>
+                                            Release date:   December 13, 2019<br>
+                                            Director:  Jay Roach<br>
+                                            </h3>
+                                            <div class="watchbutton">
+                                            <a href="https://drive.google.com/file/d/1o2nWIut9Y7pVMeVYBQQtpgDcyqXzA-8_/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                            </div>
+                                            <div class="close7">
+                                            <button class="closebutton7">CLOSE</button> </a>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        <div class="container8">
+                                                <img class="poster" src="https://img.moviesrankings.com/t/p/w1280/36ewyr1LdwwedDQhrlmhsi1nlnc.jpg"  >
+                                                <div class="text">
+                                                <h1>
+                                                ABOUT THE MOVIE
+                                                </h1>
+                                                <h2>The Shawshank Redemption</h2>
+                                                <h3>
+                                                    An innocent man (Tim Robbins) goes to a Maine penitentiary for life in 1947.<br>
+                                                Release date: October 14, 1994<br>
+                                                Director:    Frank Darabont<br>
+                                                </h3>
+                                                <div class="watchbutton">
+                                                <a href="https://drive.google.com/file/d/1fzbNts6KwjV612_z2RHPIXnHbQNiMmSk/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                </div>
+                                                <div class="close8">
+                                                <button class="closebutton8">CLOSE</button> </a>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <div class="container9">
+                                                    <img class="poster" src="https://i.pinimg.com/originals/21/80/d6/2180d6470db7bae6e013f3e6ce0d416d.jpg"  >
+                                                    <div class="text">
+                                                    <h1>
+                                                    ABOUT THE MOVIE
+                                                    </h1>
+                                                    <h2>Pulp Fiction</h2>
+                                                    <h3>
+                                                        Two hit men (John Travolta, Samuel L. Jackson), a boxer and a crime boss meet their fates.  <br>
+                                                    Release date:  October 14, 1994<br>
+                                                    Director:   Quentin Tarantino<br>
+                                                    </h3>
+                                                    <div class="watchbutton">
+                                                    <a href="https://drive.google.com/file/d/18vkv0lGKCtQiCaOOKDIB9APmW-KoHs-4/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                    </div>
+                                                    <div class="close9">
+                                                    <button class="closebutton9">CLOSE</button> </a>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+
+
+
+
+
+
+</body>
+<script>
+    const heri = document.querySelector(".KillersoftheFlowerMoon");
+    const container = document.querySelector(".container");
+    const close = document.querySelector(".closebutton");
+    heri.addEventListener("click",function(){
+    container.classList.add("show-container");
+});
+close.addEventListener("click",function(){
+    container.classList.remove("show-container");
+});
+const tc = document.querySelector(".RequiemforaDream");
+    const container2 = document.querySelector(".container2");
+    const close2 = document.querySelector(".closebutton2");
+    tc.addEventListener("click",function(){
+    container2.classList.add("show-container2");
+});
+close2.addEventListener("click",function(){
+    container2.classList.remove("show-container2");
+});
+
+const ts = document.querySelector(".AmericanPsycho");
+    const container3 = document.querySelector(".container3");
+    const close3 = document.querySelector(".closebutton3");
+    ts.addEventListener("click",function(){
+    container3.classList.add("show-container3");
+});
+close3.addEventListener("click",function(){
+    container3.classList.remove("show-container3");
+});
+const tr = document.querySelector(".ScentofaWoman");
+    const container4 = document.querySelector(".container4");
+    const close4 = document.querySelector(".closebutton4");
+    tr.addEventListener("click",function(){
+    container4.classList.add("show-container4");
+});
+close4.addEventListener("click",function(){
+    container4.classList.remove("show-container4");
+});
+const ins = document.querySelector(".WhatsEatingGilbertGrape");
+    const container5 = document.querySelector(".container5");
+    const close5 = document.querySelector(".closebutton5");
+    ins.addEventListener("click",function(){
+    container5.classList.add("show-container5");
+});
+close5.addEventListener("click",function(){
+    container5.classList.remove("show-container5");
+});
+const aqp = document.querySelector(".once");
+    const container6 = document.querySelector(".container6");
+    const close6 = document.querySelector(".closebutton6");
+    aqp.addEventListener("click",function(){
+    container6.classList.add("show-container6");
+});
+close6.addEventListener("click",function(){
+    container6.classList.remove("show-container6");
+});
+
+const go = document.querySelector(".Bombshell");
+    const container7 = document.querySelector(".container7");
+    const close7 = document.querySelector(".closebutton7");
+    go.addEventListener("click",function(){
+    container7.classList.add("show-container7");
+});
+close7.addEventListener("click",function(){
+    container7.classList.remove("show-container7");
+});
+
+const it = document.querySelector(".redem");
+    const container8 = document.querySelector(".container8");
+    const close8 = document.querySelector(".closebutton8");
+    it.addEventListener("click",function(){
+    container8.classList.add("show-container8");
+});
+close8.addEventListener("click",function(){
+    container8.classList.remove("show-container8");
+});
+
+const tum = document.querySelector(".PulpFiction");
+    const container9 = document.querySelector(".container9");
+    const close9 = document.querySelector(".closebutton9");
+    tum.addEventListener("click",function(){
+    container9.classList.add("show-container9");
+});
+close9.addEventListener("click",function(){
+    container9.classList.remove("show-container9");
+});
+
+</script>
+</html>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <title>romance</title>
+    <style>
+
+        *{
+            font-family: "Ubuntu", sans-serif;
+        }
+    .backgroundvideo{
+    
+    position:fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(8px);
+    
+
+    }
+    .pics{
+        position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    row-gap: 80px;
+    top: 40%;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5%;
+}
+img{
+        top: 10%;
+        width: 200px;
+        height: 250px;
+        border: 4px solid rgb(252, 186, 186);
+        box-shadow: 0 0 15px  red;
+    }
+    p{
+        background-color: white;
+        color:  black;
+        font-weight: bolder;
+        border: 2px solid black;
+    }
+    .pics{
+        padding-top: 10%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 25px;
+    }
+    .pics p{
+        margin-top: 0%;
+    }
+    p:hover{
+        border: 2px solid black;
+    }
+    img:hover{
+        border: 4px solid rgb(212, 245, 163);
+        cursor: pointer;
+        box-shadow: 0 0 20px rgb(217, 246, 173);
+        transform: scale(1.14);
+    }
+    .poster{
+        border: 4px solid rgb(252, 186, 186);
+        box-shadow: 0 0 15px  red;
+    }
+    .poster:hover{
+        transform: scale(1);
+        box-shadow: 0 0 15px  red;
+    }
+    .text{
+            position: relative;
+            color: white;
+        }
+        .container{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container{
+        transform: translate(0,0);
+            
+        }
+        .container{
+            transition: 0.4s;
+        }
+        .container2{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container2{
+        transform: translate(0,0);
+            
+        }
+        .container2{
+            transition: 0.4s;
+        }
+        .container3{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+            transform: translate(0,-200%);
+
+        }
+        .show-container3{
+        transform: translate(0,0);
+            
+        }
+        .container3{
+            transition: 0.4s;
+        }
+        .container4{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container4{
+        transform: translate(0,0);
+            
+        }
+        .container4{
+            transition: 0.4s;
+        }
+        .container5{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 37%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container5{
+        transform: translate(0,0);
+            
+        }
+        .container5{
+            transition: 0.4s;
+        }
+        .container6{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container6{
+        transform: translate(0,0);
+            
+        }
+        .container6{
+            transition: 0.4s;
+        }
+        .container7{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+
+        }
+        .show-container7{
+        transform: translate(0,0);
+            
+        }
+        .container7{
+            transition: 0.4s;
+        }
+        .container8{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+
+        }
+        .show-container8{
+        transform: translate(0,0);
+            
+        }
+        .container8{
+            transition: 0.4s;
+        }
+        .container9{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+
+        }
+        .show-container9{
+        transform: translate(0,0);
+            
+        }
+        .container9{
+            transition: 0.4s;
+        }
+        .text{
+            padding-top: 2%;
+        
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        button{
+            margin-inline: 10px;
+        }
+        .container img{
+            border: 4px solid white;
+        }
+        .container2 img{
+            border: 4px solid white;
+        }
+        .container3 img{
+            border: 4px solid white;
+        }
+        .container4 img{
+            border: 4px solid white;
+        }
+        .container5 img{
+            border: 4px solid white;
+        }
+        .container6 img{
+            border: 4px solid white;
+        }
+        .container7 img{
+            border: 4px solid white;
+        }
+        .container8 img{
+            border: 4px solid white;
+        }
+        .container9 img{
+            border: 4px solid white;
+        }
+        .watchbutton button{
+            line-height: 20px;
+            border: 2px solid black;
+            font-weight: bold;
+            background-color: lightgreen;
+            width: 200px;
+        }
+        button:hover{
+    background-color: rgb(84, 235, 235);
+}
+        .text h3{
+            color: greenyellow;
+
+        }
+    .text h2
+    {   font-size: 50px;
+        color: darkcyan;
+        font-weight: bolder;
+    }
+    .closebutton {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton2 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton3 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton4 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton5 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton6 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton7 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton8 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton9 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+   .poster{
+    margin-top:2%;
+    height: 370px;
+    width: 390px;
+   }
+
+   .header{
+        position: absolute;
+        top: 0.5%;
+        color: black;
+        font-size: 20px;
+        display: flex;
+        font-weight: bolder;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        filter: blur(0);
+        z-index: 1;
+        left: 19%;
+        background-color: aqua;
+        }
+        button{
+        box-shadow: 0 0 5px  white;
+    }
+    p{
+        box-shadow: 0 0 30px black;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">NOTE: PLEASE DOWNLOAD THE MOVIE TO ACCESS MULTIPLE AUDIO TRACK</div>
+    <div >
+        <video class="backgroundvideo" autoplay loop muted  src="https://videos.pexels.com/video-files/4873444/4873444-hd_1920_1080_25fps.mp4"  ></video>
+    </div>
+    <div class="pics">
+        <div ><img class="TheNotebook"  src="https://i.pinimg.com/originals/af/83/20/af8320a8a03c38b054e737845537a2cf.jpg" alt="" >   <p>The Notebook</p>
+        </div>
+        <div > <img class="Titanic" src="https://picfiles.alphacoders.com/140/thumb-1920-140026.jpg" alt="">
+        <p>Titanic</p></div>
+        <div > <img class="BlueValentine" src="http://madeinatlantis.com/wp-content/uploads/2019/09/blue-valentine-2010-movie-poster.jpg" alt=""><p>Blue Valentine</p>
+        </div>
+        <div > <img class="MeetJoeBlack
+            " src="https://flxt.tmsimg.com/assets/p21971_p_v10_ah.jpg" alt="">
+        <p>Meet Joe Black
+        </p></div>
+        <div ><img class="LittleChildren"  src="https://image.tmdb.org/t/p/original/4s6fYhtYakH21LHtwBUEMEBuCZG.jpg" alt="">
+        <p>Beauty and the Beast</p></div>
+        <div ><img class="RevolutionaryRoad" src="https://image.tmdb.org/t/p/original/63PKnmHjaDcTAjZIfj6bWVN8gvw.jpg" alt=""><p>Revolutionary Road</p>
+            
+        </div>
+
+        <div > <img class="SilverLiningsPlaybook" src="http://orig03.deviantart.net/fb03/f/2013/129/c/4/silver_linings_playbook_poster_by_xnitroz-d64mnn9.jpg" alt="">
+            <p>Silver Linings Playbook
+            </p></div>
+            <div ><img  class="PastLives" src="https://image.tmdb.org/t/p/original/rzO71VFu7CpJMfF5TQNMj0d1lSV.jpg" alt="">
+            <p>Past Lives</p></div>
+            <div ><img class="After" src="https://i.pinimg.com/originals/c6/2d/67/c62d672543d8c3ff032283b72e9ecb8d.jpg" alt=""><p>After</p>
+
+
+                <div class="container">
+                    <img class="poster" src="http://images2.fanpop.com/images/photos/3800000/The-Notebook-Wallpaper-the-notebook-3877378-1280-800.jpg" alt=""  >
+                    <div class="text">
+                    <h1>
+                    ABOUT THE MOVIE
+                    </h1>
+                    <h2>The Notebook</h2>
+                    <h3>
+                        A man (James Garner) tells a story to a woman about two lovers (Ryan Gosling, Rachel McAdams). <br>
+                    Release date: October 4, 2017<br>
+                    Director:  Nick Cassavetes<br>
+                    </h3>
+                    <div class="watchbutton">
+                    <a href="https://drive.google.com/file/d/1A6z2drV3m3BuHIoAFhXZd5EL8Hd-O4y_/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                    </div>
+                    <div class="close">
+                    <button class="closebutton">CLOSE</button> </a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container2">
+                        <img class="poster" src="https://wallpaperaccess.com/full/1162492.jpg" alt=""  >
+                        <div class="text">
+                        <h1>
+                        ABOUT THE MOVIE
+                        </h1>
+                        <h2>Titanic</h2>
+                        <h3>
+                            A woman (Kate Winslet) falls for an artist (Leonardo DiCaprio) aboard the ill-fated ship.   <br>
+                        Release date:  March 13, 1998<br>
+                        Director:  ames Cameron<br>
+                        </h3>
+                        <div class="watchbutton">
+                        <a href="https://drive.google.com/file/d/1DNvIaZkBxhn82Cfr4TC5eD4JCeKG5S4r/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                        </div>
+                        <div class="close2">
+                        <button class="closebutton2">CLOSE</button> </a>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="container3">
+                            <img class="poster" src="https://nowthenmagazine.com/assets/img/content/_1920xAUTO_crop_center-center_85_none/blue-valentine-film.jpg" alt=""  >
+                            <div class="text">
+                            <h1>
+                            ABOUT THE MOVIE
+                            </h1>
+                            <h2>Blue Valentine</h2>
+                            <h3>
+                                A couple (Ryan Gosling, Michelle Williams) cannot halt the downward spiral of their marriage.  <br>
+                            Release date:  December 29, 2010<br>
+                            Director:    Derek Cianfrance<br>
+                            </h3>
+                            <div class="watchbutton">
+                            <a href="https://drive.google.com/file/d/1Z8BEpZkso8KV4W5FUUFUlclI14Oy47bq/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                            </div>
+                            <div class="close3">
+                            <button class="closebutton3">CLOSE</button> </a>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="container4">
+                                <img class="poster" src="https://pics.filmaffinity.com/Meet_Joe_Black-143070741-large.jpg"  >
+                                <div class="text">
+                                <h1>
+                                ABOUT THE MOVIE
+                                </h1>
+                                <h2>Meet Joe Black</h2>
+                                <h3>
+                                    Death (Brad Pitt) makes a deal with a principled widower (Anthony Hopkins). <br>
+                                Release date: November 13, 1998<br>
+                                Director:  Martin Brest<br>
+                                </h3>
+                                <div class="watchbutton">
+                                <a href="https://drive.google.com/file/d/1Lp1kiDFKSZA7hjz0bHY4T01ZO3VAVX0e/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                </div>
+                                <div class="close4">
+                                <button class="closebutton4">CLOSE</button> </a>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="container5">
+                                    <img class="poster" src="https://www.wallpaperflare.com/static/332/676/867/belle-beast-beauty-and-the-beast-2017-wallpaper.jpg"  >
+                                    <div class="text">
+                                    <h1>
+                                    ABOUT THE MOVIE
+                                    </h1>
+                                    <h2>Beauty and the Beast</h2>
+                                    <h3>
+                                        A young woman discovers the kind heart and soul of a beast who keeps her in its castle.<br>
+                                    Release date:   March 17, 2017<br>
+                                    Director:  Bill Condon<br>
+                                    </h3>
+                                    <div class="watchbutton">
+                                    <a href="https://drive.google.com/file/d/1DGdrH2ftSqVMqUcFjIsBxhbeoQfUOOJP/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                    </div>
+                                    <div class="close5">
+                                    <button class="closebutton5">CLOSE</button> </a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="container6">
+                                        <img class="poster" src="http://vignette3.wikia.nocookie.net/filmguide/images/f/f5/849432fafce17273b7406553b4207b4d.jpg/revision/latest?cb=20150812164830"  >
+                                        <div class="text">
+                                        <h1>
+                                        ABOUT THE MOVIE
+                                        </h1>
+                                        <h2>Revolutionary Road</h2>
+                                        <h3>
+                                            Two suburbanites in 1950s Connecticut become stuck in an increasingly stifling life.  <br>
+                                        Release date: March 6, 2009<br>
+                                        Director:    Sam Mendes<br>
+                                        </h3>
+                                        <div class="watchbutton">
+                                        <a href="https://drive.google.com/file/d/13xf8M0uHZTdaJDqpn3URrcU5ArA2VEPM/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                        </div>
+                                        <div class="close6">
+                                        <button class="closebutton6">CLOSE</button> </a>
+                                        </div>
+                                        </div>
+                                        </div>       
+                                        <div class="container7">
+                                            <img class="poster" src="http://www.filmofilia.com/wp-content/uploads/2012/10/Silver-Linings-Playbook-poster.jpg"  >
+                                            <div class="text">
+                                            <h1>
+                                            ABOUT THE MOVIE
+                                            </h1>
+                                            <h2>Silver Linings Playbook </h2>
+                                            <h3>
+                                                A man (Bradley Cooper) intends to rebuild his life and reunite with his estranged wife.  <br>
+                                            Release date:   December 7, 2012<br>
+                                            Director:   David O. Russell<br>
+                                            </h3>
+                                            <div class="watchbutton">
+                                            <a href="https://drive.google.com/file/d/1kCTAgphNe4Rjv29M8RLHtW2yw6lz62bb/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                            </div>
+                                            <div class="close7">
+                                            <button class="closebutton7">CLOSE</button> </a>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        <div class="container8">
+                                                <img class="poster" src="https://media-cache.cinematerial.com/p/500x/sl5gmqvq/past-lives-british-movie-poster.jpg?v=1691847087"  >
+                                                <div class="text">
+                                                <h1>
+                                                ABOUT THE MOVIE
+                                                </h1>
+                                                <h2>Past Lives</h2>
+                                                <h3>
+                                                    After decades apart, two deeply connected childhood friends are reunited for one fateful week. <br>
+                                                Release date:  June 23, 2023
+                                                <br>
+                                                Director:    Celine Song<br>
+                                                </h3>
+                                                <div class="watchbutton">
+                                                <a href="https://drive.google.com/file/d/13-KnwVTyqEuyTfRFhfmGR-qhI9ACiy8q/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                </div>
+                                                <div class="close8">
+                                                <button class="closebutton8">CLOSE</button> </a>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <div class="container9">
+                                                    <img class="poster" src="https://i.pinimg.com/originals/19/f2/0f/19f20f636312be0851d5ba27c75c3b39.jpg"  >
+                                                    <div class="text">
+                                                    <h1>
+                                                    ABOUT THE MOVIE
+                                                    </h1>
+                                                    <h2>After </h2>
+                                                    <h3>
+                                                        A college freshman's world opens up when she meets a mysterious and brooding rebel. <br>
+                                                    Release date:   April 19, 2019<br>
+                                                    Director:   Jenny Gage<br>
+                                                    </h3>
+                                                    <div class="watchbutton">
+                                                    <a href="https://drive.google.com/file/d/1WfWyElo8mrC5u2lPAlbhlQIhyjWBdhs0/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                    </div>
+                                                    <div class="close9">
+                                                    <button class="closebutton9">CLOSE</button> </a>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+        
+
+        
+</body>
+<script>
+    const heri = document.querySelector(".TheNotebook");
+    const container = document.querySelector(".container");
+    const close = document.querySelector(".closebutton");
+    heri.addEventListener("click",function(){
+    container.classList.add("show-container");
+});
+close.addEventListener("click",function(){
+    container.classList.remove("show-container");
+});
+const tc = document.querySelector(".Titanic");
+    const container2 = document.querySelector(".container2");
+    const close2 = document.querySelector(".closebutton2");
+    tc.addEventListener("click",function(){
+    container2.classList.add("show-container2");
+});
+close2.addEventListener("click",function(){
+    container2.classList.remove("show-container2");
+});
+
+const ts = document.querySelector(".BlueValentine");
+    const container3 = document.querySelector(".container3");
+    const close3 = document.querySelector(".closebutton3");
+    ts.addEventListener("click",function(){
+    container3.classList.add("show-container3");
+});
+close3.addEventListener("click",function(){
+    container3.classList.remove("show-container3");
+});
+const tr = document.querySelector(".MeetJoeBlack");
+    const container4 = document.querySelector(".container4");
+    const close4 = document.querySelector(".closebutton4");
+    tr.addEventListener("click",function(){
+    container4.classList.add("show-container4");
+});
+close4.addEventListener("click",function(){
+    container4.classList.remove("show-container4");
+});
+const ins = document.querySelector(".LittleChildren");
+    const container5 = document.querySelector(".container5");
+    const close5 = document.querySelector(".closebutton5");
+    ins.addEventListener("click",function(){
+    container5.classList.add("show-container5");
+});
+close5.addEventListener("click",function(){
+    container5.classList.remove("show-container5");
+});
+const aqp = document.querySelector(".RevolutionaryRoad");
+    const container6 = document.querySelector(".container6");
+    const close6 = document.querySelector(".closebutton6");
+    aqp.addEventListener("click",function(){
+    container6.classList.add("show-container6");
+});
+close6.addEventListener("click",function(){
+    container6.classList.remove("show-container6");
+});
+
+const go = document.querySelector(".SilverLiningsPlaybook");
+    const container7 = document.querySelector(".container7");
+    const close7 = document.querySelector(".closebutton7");
+    go.addEventListener("click",function(){
+    container7.classList.add("show-container7");
+});
+close7.addEventListener("click",function(){
+    container7.classList.remove("show-container7");
+});
+
+const it = document.querySelector(".PastLives");
+    const container8 = document.querySelector(".container8");
+    const close8 = document.querySelector(".closebutton8");
+    it.addEventListener("click",function(){
+    container8.classList.add("show-container8");
+});
+close8.addEventListener("click",function(){
+    container8.classList.remove("show-container8");
+});
+
+const tum = document.querySelector(".After");
+    const container9 = document.querySelector(".container9");
+    const close9 = document.querySelector(".closebutton9");
+    tum.addEventListener("click",function(){
+    container9.classList.add("show-container9");
+});
+close9.addEventListener("click",function(){
+    container9.classList.remove("show-container9");
+});
+
+</script>
+</html>

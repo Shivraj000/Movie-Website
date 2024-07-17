@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <title>action</title>
+    <style>
+        *{
+            font-family: "Ubuntu", sans-serif;
+        }
+    .backgroundvideo{
+    
+    position:fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(8px);
+    }
+    .pics{
+        position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    row-gap: 80px;
+    top: 40%;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5%;
+
+}
+img{
+        top: 10%;
+        width: 200px;
+        height: 250px;
+        border: 4px solid rgb(252, 186, 186);
+        box-shadow: 0 0 15px  red;
+    }
+    p{
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        border: 2px solid black;
+        box-shadow: 0 0 10px white;
+    }
+    .pics{
+        padding-top: 10%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 25px;
+        
+    }
+    .pics p{
+        margin-top: 0%;
+    }
+    p:hover{
+        border: 2px solid black;
+    }
+    
+    img:hover{
+        border: 4px solid rgb(212, 245, 163);
+        cursor: pointer;
+        box-shadow: 0 0 20px rgb(217, 246, 173);
+        transform: scale(1.14);
+    }
+    .text{
+            position: relative;
+            color: white;
+        }
+        .container{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        
+        transform: translate(0,-200%);
+
+        }
+        .show-container{
+        transform: translate(0,0);
+            
+        }
+        .container{
+            transition: 0.4s;
+        }
+        .container2{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+            
+        transform: translate(0,-200%);
+
+        }
+        .show-container2{
+        transform: translate(0,0);
+            
+        }
+        .container2{
+            transition: 0.4s;
+        }
+        .container3{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+            
+        transform: translate(0,-200%);
+
+        }
+        .show-container3{
+        transform: translate(0,0);
+            
+        }
+        .container3{
+            transition: 0.4s;
+        }
+        .container4{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+            
+        transform: translate(0,-200%);
+
+        }
+        .show-container4{
+        transform: translate(0,0);
+            
+        }
+        .container4{
+            transition: 0.4s;
+        }
+        .container5{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 37%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        
+        transform: translate(0,-200%);
+
+        }
+        .show-container5{
+        transform: translate(0,0);
+            
+        }
+        .container5{
+            transition: 0.4s;
+        }
+        .container6{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+            
+        transform: translate(0,-200%);
+
+        }
+        .show-container6{
+        transform: translate(0,0);
+            
+        }
+        .container6{
+            transition: 0.4s;
+        }
+        .container7{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        
+        transform: translate(0,-300%);
+
+        }
+        .show-container7{
+        transform: translate(0,0);
+            
+        }
+        .container7{
+            transition: 0.4s;
+        }
+        .container8{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        
+        transform: translate(0,-300%);
+
+        }
+        .show-container8{
+        transform: translate(0,0);
+            
+        }
+        .container8{
+            transition: 0.4s;
+        }
+        .container9{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        
+        transform: translate(0,-300%);
+
+        }
+        .show-container9{
+        transform: translate(0,0);
+            
+        }
+        .container9{
+            transition: 0.4s;
+        }
+        .text{
+            padding-top: 2%;
+        
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        button{
+            margin-inline: 10px;
+        }
+        .container img{
+            border: 4px solid white;
+        }
+        .container2 img{
+            border: 4px solid white;
+        }
+        .container3 img{
+            border: 4px solid white;
+        }
+        .container4 img{
+            border: 4px solid white;
+        }
+        .container5 img{
+            border: 4px solid white;
+        }
+        .container6 img{
+            border: 4px solid white;
+        }
+        .container7 img{
+            border: 4px solid white;
+        }
+        .container8 img{
+            border: 4px solid white;
+        }
+        .container9 img{
+            border: 4px solid white;
+        }
+        .watchbutton button{
+            line-height: 20px;
+            border: 2px solid black;
+            font-weight: bold;
+            background-color: lightgreen;
+            width: 200px;
+        }
+        button:hover{
+    background-color: rgb(84, 235, 235);
+}
+        .text h3{
+            color: greenyellow;
+        
+        }
+    .text h2
+    {   font-size: 50px;
+        color: darkcyan;
+        font-weight: bolder;
+    }
+    .closebutton {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton2 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton3 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton4 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+    margin-top: 30px;
+
+    }
+    .closebutton5 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+
+    }
+    .closebutton6 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton7 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton8 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton9 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+   .poster{
+    height: 370px;
+    width: 390px;
+    margin-top:3%;
+   }
+   .header{
+        position: absolute;
+        top: 0.5%;
+        color: black;
+        font-size: 20px;
+        display: flex;
+        font-weight: bolder;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        filter: blur(0);
+        z-index: 1;
+       left: 19%;
+        background-color: aqua;
+        }
+     .poster:hover{
+        
+        box-shadow: 0 0 15px  rgb(3, 3, 250);
+        transform: scale(1);
+    }
+    .poster{
+        box-shadow:0 0 15px rgb(3, 3, 250);
+    }
+    button{
+        box-shadow: 0 0 5px  white;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">NOTE: PLEASE DOWNLOAD THE MOVIE TO ACCESS MULTIPLE AUDIO TRACK</div>
+    <div >
+        <video class="backgroundvideo" autoplay loop muted  src="https://assets.mixkit.co/videos/23609/23609-720.mp4"  ></video>
+    </div>
+    <div class="pics">
+        <div><img class="HobbsShaw" src="https://www.inspirationde.com/wp-content/uploads/2019/02/hobbs-and-shaw-movie-poster-15490373018gkn4-770x1172.jpg" alt="" ><p>Hobbs & Shaw</p>
+        </div>
+        <div> <img  class="JohnWick" src="http://www.newdvdreleasedates.com/images/posters/large/john-wick-2014-06.jpg" alt="">
+        <p>John Wick</p></div>
+        <div><img  class="MadMaxFuryRoad"  src="https://i.etsystatic.com/21028910/r/il/3c6029/2796712209/il_fullxfull.2796712209_d1z7.jpg" alt=""><p>Mad Max: Fury Road</p>
+        </div>
+        <div > <img  class="Mrandms" src="https://cdn.kinocheck.com/i/ltdyho7ube.jpg" alt="">
+        <p>MR. & MRS. SMITH</p></div>
+        <div ><img  class="civil"  src="https://i.pinimg.com/originals/79/d3/82/79d382da2da72021fb9c71058314902b.jpg" alt="">
+        <p> CAPTAIN AMERICA: CIVIL WAR</p></div>
+        <div ><img   class="three" src="https://i.pinimg.com/736x/d7/30/d8/d730d8dacf22cdee771c46f4e2480ba9---movie-brady.jpg" alt=""><p>300 </p>
+            
+        </div>
+
+        <div > <img  class="Kandd" src="https://image.tmdb.org/t/p/original/zu9N5J9X2DjEVSycf1DE0iMpgf1.jpg" alt="">
+            <p>Knight and Day
+            </p></div>
+            <div ><img  class="theexp" src="https://image.tmdb.org/t/p/original/zhe97i9wJ5WgZ0JJnJj3zSLLZt2.jpg" alt="">
+            <p>The Expendables</p></div>
+            <div ><img  class="Extraction" src="https://cdn.flickeringmyth.com/wp-content/uploads/2020/04/extraction-poster-2-600x889.jpg" alt=""><p>Extraction</p>
+
+                    <div class="container">
+                    <img class="poster" src="https://wallpapercave.com/wp/wp3944676.jpg" alt=""  >
+                    <div class="text">
+                    <h1>
+                    ABOUT THE MOVIE
+                    </h1>
+                    <h2>Hobbs & Shaw</h2>
+                    <h3>
+                    A lawman and an operative battle a cybernetically enhanced soldier who possesses a lethal pathogen<br>
+                    Release date: August 2, 2019<br>
+                    Director: David Leitch<br>
+                    </h3>
+                    <div class="watchbutton">
+                    <a href="https://drive.google.com/file/d/1vOXy0QoL4Gt0LhHbYXfUjhehWLNyRw40/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                    </div>
+                    <div class="close">
+                    <button class="closebutton">CLOSE</button> </a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container2">
+                        <img class="poster" src="https://i.etsystatic.com/26881902/r/il/88d0c5/3914964769/il_fullxfull.3914964769_kgcl.jpg" alt=""  >
+                        <div class="text">
+                        <h1>
+                        ABOUT THE MOVIE
+                        </h1>
+                        <h2>John Wick</h2>
+                        <h3>
+                        An ex-hitman (Keanu Reeves) comes out of retirement to hunt down the mobsters who ruined his life. <br>
+                        Release date: October 24, 2014<br>
+                        Director:  Chad Stahelski<br>
+                        
+                        
+                        </h3>
+                        
+                        <div class="watchbutton">
+                        <a href="https://drive.google.com/file/d/1P3APBF0THrXoseNrJWsAM_voiQPnjkcJ/view?usp=sharing"> <button> WATCH ONLINE OR DOWNLOAD</button> </a>
+                        </div>
+                        <div class="close2">
+                        <button class="closebutton2">CLOSE</button> </a>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="container3">
+                            <img class="poster" src="https://orig00.deviantart.net/5183/f/2015/025/5/a/mad_max__fury_road__2015____poster_by_camw1n-d8fbn8z.png" alt=""  >
+                            <div class="text">
+                            <h1>
+                            ABOUT THE MOVIE
+                            </h1>
+                            <h2>Mad Max: Fury Road</h2>
+                            <h3>
+                                Mad Max and a band of rebels try to outrun a warlord and his henchmen in a high-speed, desert chase. <br>
+                            Release date: May 15, 2015<br>
+                            Director:  George Miller<br>
+                            </h3>
+                            <div class="watchbutton">
+                            <a href="https://drive.google.com/file/d/1S2CbCdR1Vkkf4xocFHK1r9zL2TLkEAo8/view?usp=sharing"> <button> WATCH ONLINE OR DOWNLOAD</button> </a>
+                            </div>
+                            <div class="close3">
+                            <button class="closebutton3">CLOSE</button> </a>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="container4">
+                                <img class="poster" src="https://i.pinimg.com/originals/ea/83/aa/ea83aa31e6ad8040c106997802517437.jpg"  >
+                                <div class="text">
+                                <h1>
+                                ABOUT THE MOVIE
+                                </h1>
+                                <h2>Mr. & Mrs. Smith</h2>
+                                <h3>
+                                    A husband (Brad Pitt) and wife (Angelina Jolie) are assassins for rival organizations.<br>
+                                Release date: June 10, 2005<br>
+                                Director:  Doug Liman<br>
+                                </h3>
+                                <div class="watchbutton">
+                                <a href="https://drive.google.com/file/d/1K03jWo94_i6ReMnroQebrUD-HVPJ6QT4/view?usp=sharing"> <button> WATCH ONLINE OR DOWNLOAD</button> </a>
+                                </div>
+                                <div class="close4">
+                                <button class="closebutton4">CLOSE</button> </a>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="container5">
+                                    <img class="poster" src="https://i.pinimg.com/originals/9f/6a/a7/9f6aa7e86578c22033a36654cbb7557a.jpg"  >
+                                    <div class="text">
+                                    <h1>
+                                    ABOUT THE MOVIE
+                                    </h1>
+                                    <h2>Captain America:Civil War</h2>
+                                    <h3>
+                                        A feud between Captain America (Chris Evans) and Iron Man leaves the Avengers in turmoil.<br>
+                                    Release date: May 6, 2016<br>
+                                    Director:   Russo brothers, Joe Russo, Anthony Russo<br>
+                                    </h3>
+                                    <div class="watchbutton">
+                                    <a href="https://drive.google.com/file/d/1dEEv5SxZ7J-JFY4P0ZLM9rbAr8jgXwBX/view?usp=sharing"> <button > WATCH ONLINE OR DOWNLOAD</button> </a>
+                                    </div>
+                                    <div class="close5">
+                                    <button class="closebutton5">CLOSE</button> </a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="container6">
+                                        <img class="poster" src="http://images2.fanpop.com/images/photos/6400000/300-the-movie-movies-6443657-1280-960.jpg"  >
+                                        <div class="text">
+                                        <h1>
+                                        ABOUT THE MOVIE
+                                        </h1>
+                                        <h2>300</h2>
+                                        <h3>
+                                            Badly outnumbered Spartan warriors clash with the Persian army at the Battle of Thermopylae<br>
+                                        Release date: March 16, 2007<br>
+                                        Director: Zack Snyder<br>
+                                        </h3>
+                                        <div class="watchbutton">
+                                        <a href="https://drive.google.com/file/d/15E07idR_gzzVzuEvf6QqlZsKKkpsJ8a-/view?usp=sharing"> <button> WATCH ONLINE OR DOWNLOAD</button> </a>
+                                        </div>
+                                        <div class="close6">
+                                        <button class="closebutton6">CLOSE</button> </a>
+                                        </div>
+                                        </div>
+                                        </div>       
+                                        <div class="container7">
+                                            <img class="poster" src="https://i.pinimg.com/originals/fd/64/01/fd6401f3d9dd64f9a79b0f6d78f79f0a.jpg"  >
+                                            <div class="text">
+                                            <h1>
+                                            ABOUT THE MOVIE
+                                            </h1>
+                                            <h2>Knight and Day</h2>
+                                            <h3>
+                                                A woman (Cameron Diaz) becomes the reluctant partner of a fugitive spy (Tom Cruise).<br>
+                                            Release date: June 23, 2010<br>
+                                            Director:  James Mangold<br>
+                                            </h3>
+                                            <div class="watchbutton">
+                                            <a href="https://drive.google.com/file/d/1ixkEuI703VlMtBDH3FRccb8WWJG-NY10/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                            </div>
+                                            <div class="close7">
+                                            <button class="closebutton7">CLOSE</button> </a>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        <div class="container8">
+                                                <img class="poster" src="https://image.tmdb.org/t/p/original/tZW421SKb9KtaVKHEJ9EOnCvQ9W.jpg"  >
+                                                <div class="text">
+                                                <h1>
+                                                ABOUT THE MOVIE
+                                                </h1>
+                                                <h2>The Expendables</h2>
+                                                <h3>
+                                                    Mercenaries embark on a mission to overthrow a South American dictator<br>
+                                                Release date: August 13, 2010<br>
+                                                Director:   Sylvester Stallone<br>
+                                                </h3>
+                                                <div class="watchbutton">
+                                                <a href="https://drive.google.com/file/d/1z5z5exZGFm9gzbdI0AcSygzPn4AKG5vT/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                </div>
+                                                <div class="close8">
+                                                <button class="closebutton8">CLOSE</button> </a>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <div class="container9">
+                                                    <img class="poster" src="https://image.tmdb.org/t/p/original/96ovd9JPD57R8cIMmGluFMFWt10.jpg"  >
+                                                    <div class="text">
+                                                    <h1>
+                                                    ABOUT THE MOVIE
+                                                    </h1>
+                                                    <h2>Extraction</h2>
+                                                    <h3>
+                                                        A weary mercenary has to liberate an Indian boy who has been kidnapped. <br>
+                                                    Release date: April 24,2020<br>
+                                                    Director:  Sam Hargrave<br>
+                                                    </h3>
+                                                    <div class="watchbutton">
+                                                    <a href="https://drive.google.com/file/d/1dLYC9loCU1e7d4m__qxEOKGjnhDeXM3s/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                    </div>
+                                                    <div class="close9">
+                                                    <button class="closebutton9">CLOSE</button> </a>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+        
+</body>
+    <script>
+        const has = document.querySelector(".HobbsShaw");
+        const container = document.querySelector(".container");
+        const close = document.querySelector(".closebutton");
+        has.addEventListener("click",function(){
+        container.classList.add("show-container");
+    });
+    close.addEventListener("click",function(){
+        container.classList.remove("show-container");
+    });
+    const jk = document.querySelector(".JohnWick");
+        const container2 = document.querySelector(".container2");
+        const close2 = document.querySelector(".closebutton2");
+        jk.addEventListener("click",function(){
+        container2.classList.add("show-container2");
+    });
+    close2.addEventListener("click",function(){
+        container2.classList.remove("show-container2");
+    });
+
+    const mf = document.querySelector(".MadMaxFuryRoad");
+        const container3 = document.querySelector(".container3");
+        const close3 = document.querySelector(".closebutton3");
+        mf.addEventListener("click",function(){
+        container3.classList.add("show-container3");
+    });
+    close3.addEventListener("click",function(){
+        container3.classList.remove("show-container3");
+    });
+    const mm = document.querySelector(".Mrandms");
+        const container4 = document.querySelector(".container4");
+        const close4 = document.querySelector(".closebutton4");
+        mm.addEventListener("click",function(){
+        container4.classList.add("show-container4");
+    });
+    close4.addEventListener("click",function(){
+        container4.classList.remove("show-container4");
+    });
+    const civil = document.querySelector(".civil");
+        const container5 = document.querySelector(".container5");
+        const close5 = document.querySelector(".closebutton5");
+        civil.addEventListener("click",function(){
+        container5.classList.add("show-container5");
+    });
+    close5.addEventListener("click",function(){
+        container5.classList.remove("show-container5");
+    });
+    const three = document.querySelector(".three");
+        const container6 = document.querySelector(".container6");
+        const close6 = document.querySelector(".closebutton6");
+        three.addEventListener("click",function(){
+        container6.classList.add("show-container6");
+    });
+    close6.addEventListener("click",function(){
+        container6.classList.remove("show-container6");
+    });
+    
+    const Kanddd = document.querySelector(".Kandd");
+        const container7 = document.querySelector(".container7");
+        const close7 = document.querySelector(".closebutton7");
+        Kanddd.addEventListener("click",function(){
+        container7.classList.add("show-container7");
+    });
+    close7.addEventListener("click",function(){
+        container7.classList.remove("show-container7");
+    });
+    
+    const exp = document.querySelector(".theexp");
+        const container8 = document.querySelector(".container8");
+        const close8 = document.querySelector(".closebutton8");
+        exp.addEventListener("click",function(){
+        container8.classList.add("show-container8");
+    });
+    close8.addEventListener("click",function(){
+        container8.classList.remove("show-container8");
+    });
+    
+    const ext = document.querySelector(".Extraction");
+        const container9 = document.querySelector(".container9");
+        const close9 = document.querySelector(".closebutton9");
+        ext.addEventListener("click",function(){
+        container9.classList.add("show-container9");
+    });
+    close9.addEventListener("click",function(){
+        container9.classList.remove("show-container9");
+    });
+
+    </script>
+</html>

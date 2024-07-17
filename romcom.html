@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <title>comedy</title>
+    <style>
+        *{
+            font-family: "Ubuntu", sans-serif;
+        }
+    .backgroundvideo{
+    
+    position:fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(8px);
+
+    }
+    .pics{
+        position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    row-gap: 80px;
+    top: 40%;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5%;
+}
+img{
+        top: 10%;
+        width: 200px;
+        height: 250px;
+        border: 4px solid rgb(252, 186, 186);
+        box-shadow: 0 0 15px  red;
+    }
+    
+    button{
+        box-shadow: 0 0 5px  white;
+    }
+
+    .poster:hover{
+        transform: scale(1);
+        box-shadow: 0 0 15px  red;
+    }
+    p{
+        background-color: white;
+        color:  black;
+        font-weight: bolder;
+        border: 2px solid black;
+    }
+    .pics{
+        padding-top: 8%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 25px;
+    }
+    .pics p{
+        margin-top: 0%;
+    }
+    p:hover{
+        border: 2px solid black;
+    }
+    img:hover{
+        border: 4px solid rgb(212, 245, 163);
+        cursor: pointer;
+        box-shadow: 0 0 20px rgb(217, 246, 173);
+        transform: scale(1.14);
+    }
+    .text{
+            position: relative;
+            color: white;
+        }
+        .container{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container{
+        transform: translate(0,0);
+            
+        }
+        .container{
+            transition: 0.4s;
+        }
+        .container2{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container2{
+        transform: translate(0,0);
+            
+        }
+        .container2{
+            transition: 0.4s;
+        }
+        .container3{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container3{
+        transform: translate(0,0);
+            
+        }
+        .container3{
+            transition: 0.4s;
+        }
+        .container4{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container4{
+        transform: translate(0,0);
+            
+        }
+        .container4{
+            transition: 0.4s;
+        }
+        .container5{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 37%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container5{
+        transform: translate(0,0);
+            
+        }
+        .container5{
+            transition: 0.4s;
+        }
+        .container6{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container6{
+        transform: translate(0,0);
+            
+        }
+        .container6{
+            transition: 0.4s;
+        }
+        .container7{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+        }
+        .show-container7{
+        transform: translate(0,0);
+            
+        }
+        .container7{
+            transition: 0.4s;
+        }
+        .container8{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+
+        }
+        .show-container8{
+        transform: translate(0,0);
+            
+        }
+        .container8{
+            transition: 0.4s;
+        }
+        .container9{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+        
+
+        }
+        .show-container9{
+        transform: translate(0,0);
+            
+        }
+        .container9{
+            transition: 0.4s;
+        }
+        .text{
+            padding-top: 2%;
+        
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        button{
+            margin-inline: 10px;
+        }
+        .container img{
+            border: 4px solid white;
+        }
+        .container2 img{
+            border: 4px solid white;
+        }
+        .container3 img{
+            border: 4px solid white;
+        }
+        .container4 img{
+            border: 4px solid white;
+        }
+        .container5 img{
+            border: 4px solid white;
+        }
+        .container6 img{
+            border: 4px solid white;
+        }
+        .container7 img{
+            border: 4px solid white;
+        }
+        .container8 img{
+            border: 4px solid white;
+        }
+        .container9 img{
+            border: 4px solid white;
+        }
+        .watchbutton button{
+            line-height: 20px;
+            border: 2px solid black;
+            font-weight: bold;
+            background-color: lightgreen;
+            width: 200px;
+        }
+        button:hover{
+    background-color: rgb(84, 235, 235);
+}
+        .text h3{
+            color: greenyellow;
+           
+        }
+        .container8 .text h2{
+            font-size:30px;
+        color: darkcyan;
+        font-weight: bolder;
+        }
+    .text h2
+    {   font-size: 50px;
+        color: darkcyan;
+        font-weight: bolder;
+    }
+    .closebutton {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+    .closebutton2 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+    .closebutton3 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+    .closebutton4 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+    .closebutton5 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+    .closebutton6 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+    .closebutton7 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+    .closebutton8 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+    .closebutton9 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+   .poster{
+    margin-top:2%;
+    height: 370px;
+    width: 390px;
+   }
+
+   .header{
+        position: absolute;
+        top: 0.5%;
+        color: black;
+        font-size: 20px;
+        display: flex;
+        font-weight: bolder;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        filter: blur(0);
+        z-index: 1;
+        left: 19%;
+        background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">NOTE: PLEASE DOWNLOAD THE MOVIE TO ACCESS MULTIPLE AUDIO TRACK</div>
+    <div >
+        <video class="backgroundvideo" autoplay loop muted  src="https://assets.mixkit.co/videos/4772/4772-720.mp4"  ></video>
+    </div>
+    <div class="pics">
+        <div ><img  class="TheHangover"  src="https://flxt.tmsimg.com/assets/p192248_p_v10_ap.jpg" alt="" >   <p>The Hangover</p>
+        </div>
+        <div> <img  class="Ted" src="https://m.media-amazon.com/images/I/61CmznRcivL.jpg" alt="">
+        <p>Ted</p></div>
+        <div > <img class="Superbad" src="https://media-cache.cinematerial.com/p/500x/0fgyhz4e/superbad-movie-poster.jpg?v=1456236318" alt=""><p>Superbad</p>
+        </div>
+        <div> <img  class="TheDictator" src="https://image.tmdb.org/t/p/original/dlK2YEPLSMqV9qAbvdTQKvqsGeD.jpg" alt="">
+        <p>The Dictator</p></div>
+        <div ><img  class="WearetheMillers" src="https://www.releasedetails.com/wp-content/uploads/2018/10/138832-poster.jpg" alt="">
+        <p>We're the Millers</p></div>
+        <div ><img class="DueDate" src="https://flxt.tmsimg.com/assets/p8129741_p_v10_am.jpg" alt=""><p>Due Date</p>
+            
+        </div>
+
+        <div > <img class="CentralIntelligence" src="http://tiffanyyong.com/wp-content/uploads/2016/06/central-intelligence-movie-2016-poster.jpg" alt="">
+            <p>Central Intelligence
+            </p></div>
+            <div ><img class="RushHour"  src="https://images.moviesrankings.com/image/thumb/Video114/v4/8d/b4/e1/8db4e112-55b0-a246-7b39-6c6d9411aec3/pr_source.jpg/900x900bb.jpg" alt="">
+            <p>Rush Hour</p></div>
+            <div ><img class="JumpStreet" src="https://www.regarder-films.net/wp-content/uploads/2019/06/21-jump-street.jpg" alt=""><p>21 Jump Street</p>
+        
+
+
+
+
+                <div class="container">
+                    <img class="poster" src="https://3.bp.blogspot.com/-eT71cjdg8j0/Tj6XwhF7IWI/AAAAAAAABXA/obTiSIYSpwE/s1600/hangover_5.jpg" alt=""  >
+                    <div class="text">
+                    <h1>
+                    ABOUT THE MOVIE
+                    </h1>
+                    <h2>The Hangover</h2>
+                    <h3>
+                        After a wild stag party, three groomsmen must find their missing pal before his wedding. <br>
+                    Release date: June 26, 2009<br>
+                    Director:   Todd Phillips<br>
+                    </h3>
+                    <div class="watchbutton">
+                    <a href="https://drive.google.com/file/d/17CXZOZZkq5KwNKxqEjiNFVq2LOrLOoGB/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                    </div>
+                    <div class="close">
+                    <button class="closebutton">CLOSE</button> </a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container2">
+                        <img class="poster" src="https://media.timeout.com/images/100538089/image.jpg" alt=""  >
+                        <div class="text">
+                        <h1>
+                        ABOUT THE MOVIE
+                        </h1>
+                        <h2>Ted</h2>
+                        <h3>
+                            A grown man (Mark Wahlberg) has a live teddy bear (Seth MacFarlane) as a constant companion.<br>
+                        Release date:  October 26, 2012<br>
+                        Director:  Seth MacFarlane<br>
+                        </h3>
+                        <div class="watchbutton">
+                        <a href="https://drive.google.com/file/d/19iorV1uPK8MC8wHs33TLxisy5BQC2nnv/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                        </div>
+                        <div class="close2">
+                        <button class="closebutton2">CLOSE</button> </a>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="container3">
+                            <img class="poster" src="https://www.rollingstone.de/wp-content/uploads/2021/05/04/16/superbad2-scaled-992x560.jpg" alt=""  >
+                            <div class="text">
+                            <h1>
+                            ABOUT THE MOVIE
+                            </h1>
+                            <h2>Superbad</h2>
+                            <h3>
+                                Co-dependent high school teens hope to score booze and babes at a party.  <br>
+                            Release date:  October 26, 2007<br>
+                            Director:  Greg Mottola<br>
+                            </h3>
+                            <div class="watchbutton">
+                            <a href="https://drive.google.com/file/d/1O39VF9VXYje-yRK_E_qrDA_u7p5B0ncA/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                            </div>
+                            <div class="close3">
+                            <button class="closebutton3">CLOSE</button> </a>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="container4">
+                                <img class="poster" src="http://4.bp.blogspot.com/-QmIV5wXX7PI/UCIOQnAqwYI/AAAAAAAAANM/-QDAUBYM9OY/s1600/the-dictator-movie-poster.jpg"  >
+                                <div class="text">
+                                <h1>
+                                ABOUT THE MOVIE
+                                </h1>
+                                <h2>The Dictator</h2>
+                                <h3>
+                                    A North African tyrant risks his life to ensure that democracy never comes to his country. <br>
+                                Release date: August 31, 2018<br>
+                                Director:  Larry Charles<br>
+                                </h3>
+                                <div class="watchbutton">
+                                <a href="https://drive.google.com/file/d/1ME6XT8vn-Jq380ZAPJpCCeOusUvJreg1/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                </div>
+                                <div class="close4">
+                                <button class="closebutton4">CLOSE</button> </a>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="container5">
+                                    <img class="poster" src="http://images6.fanpop.com/image/photos/35500000/We-re-the-Millers-were-the-millers-35546784-1600-960.jpg"  >
+                                    <div class="text">
+                                    <h1>
+                                    ABOUT THE MOVIE
+                                    </h1>
+                                    <h2>We're the Millers</h2>
+                                    <h3>
+                                        A drug dealer heads to Mexico with a fake family to smuggle a big shipment back into the U.S. <br>
+                                    Release date: August 30, 2013<br>
+                                    Director:  Rawson Marshall Thurber<br>
+                                    </h3>
+                                    <div class="watchbutton">
+                                    <a href="https://drive.google.com/file/d/1ZgQM4bfSKzplkqFHTl92R26xtXcsnr5x/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                    </div>
+                                    <div class="close5">
+                                    <button class="closebutton5">CLOSE</button> </a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="container6">
+                                        <img class="poster" src="http://img.xcitefun.net/users/2010/08/206109,xcitefun-due-date-poster-6.jpg"  >
+                                        <div class="text">
+                                        <h1>
+                                        ABOUT THE MOVIE
+                                        </h1>
+                                        <h2>Due Date</h2>
+                                        <h3>
+                                            A high-strung man (Robert Downey Jr.) takes a road trip with an annoying stranger.  <br>
+                                        Release date:  November 5, 2010<br>
+                                        Director: Todd Phillips<br>
+                                        </h3>
+                                        <div class="watchbutton">
+                                        <a href="https://drive.google.com/file/d/1ovdEQLtsfae4i0kPytqQilX0hhGav7SR/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                        </div>
+                                        <div class="close6">
+                                        <button class="closebutton6">CLOSE</button> </a>
+                                        </div>
+                                        </div>
+                                        </div>       
+                                        <div class="container7">
+                                            <img class="poster" src="https://i.pinimg.com/originals/b1/74/46/b174461c7c23569f43f9942946bb7c02.jpg"  >
+                                            <div class="text">
+                                            <h1>
+                                            ABOUT THE MOVIE
+                                            </h1>
+                                            <h2>Central Intelligence</h2>
+                                            <h3>
+                                                A CIA agent and his ex-classmate encounter shootouts, espionage and double-crosses while on a case.<br>
+                                            Release date: June 17, 2016<br>
+                                            Director: Rawson Marshall Thurber<br>
+                                            </h3>
+                                            <div class="watchbutton">
+                                            <a href="https://drive.google.com/file/d/14kU4ZUTUrBD70MWp4rvMLJgqfdwIhdsP/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                            </div>
+                                            <div class="close7">
+                                            <button class="closebutton7">CLOSE</button> </a>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        <div class="container8">
+                                                <img class="poster" src="https://www.elmstba.com/wp-content/uploads/2020/03/Rush-Hour-1.jpg"  >
+                                                <div class="text">
+                                                <h1>
+                                                ABOUT THE MOVIE
+                                                </h1>
+                                                <h2>Rush Hour</h2>
+                                                <h3>
+                                                    Mismatched police partners (Jackie Chan, Chris Tucker) seek a kidnapped girl. <br>
+                                                Release date:  September 18, 1998<br>
+                                                Director:    Brett Ratner<br>
+                                                </h3>
+                                                <div class="watchbutton">
+                                                <a href="https://drive.google.com/file/d/1A9N3bdHro0tNwrZjx8apaaecP-Z3g3DA/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                </div>
+                                                <div class="close8">
+                                                <button class="closebutton8">CLOSE</button> </a>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <div class="container9">
+                                                    <img class="poster" src="http://www.filmofilia.com/wp-content/uploads/2012/02/21_Jump_Street.jpg"  >
+                                                    <div class="text">
+                                                    <h1>
+                                                    ABOUT THE MOVIE
+                                                    </h1>
+                                                    <h2>21 Jump Street</h2>
+                                                    <h3>
+                                                        Two cops working under cover at a high school must confront their teenage issues all over again.  <br>
+                                                    Release date:  April 20, 2012<br>
+                                                    Director:   Phil Lord and Christopher Miller<br>
+                                                    </h3>
+                                                    <div class="watchbutton">
+                                                    <a href="https://drive.google.com/file/d/1JabJFBI7ltk1Zf9EbYnXyx8w3vIHHuAi/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                    </div>
+                                                    <div class="close9">
+                                                    <button class="closebutton9">CLOSE</button> </a>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+
+
+</body>
+<script>
+    const  si= document.querySelector(".TheHangover");
+    const container = document.querySelector(".container");
+    const close = document.querySelector(".closebutton");
+    si.addEventListener("click",function(){
+    container.classList.add("show-container");
+});
+close.addEventListener("click",function(){
+    container.classList.remove("show-container");
+});
+const gg = document.querySelector(".Ted");
+    const container2 = document.querySelector(".container2");
+    const close2 = document.querySelector(".closebutton2");
+    gg.addEventListener("click",function(){
+    container2.classList.add("show-container2");
+});
+close2.addEventListener("click",function(){
+    container2.classList.remove("show-container2");
+});
+
+const tus = document.querySelector(".Superbad");
+    const container3 = document.querySelector(".container3");
+    const close3 = document.querySelector(".closebutton3");
+    tus.addEventListener("click",function(){
+    container3.classList.add("show-container3");
+});
+close3.addEventListener("click",function(){
+    container3.classList.remove("show-container3");
+});
+const td = document.querySelector(".TheDictator");
+    const container4 = document.querySelector(".container4");
+    const close4 = document.querySelector(".closebutton4");
+    td.addEventListener("click",function(){
+    container4.classList.add("show-container4");
+});
+close4.addEventListener("click",function(){
+    container4.classList.remove("show-container4");
+});
+const old = document.querySelector(".WearetheMillers");
+    const container5 = document.querySelector(".container5");
+    const close5 = document.querySelector(".closebutton5");
+    old.addEventListener("click",function(){
+    container5.classList.add("show-container5");
+});
+close5.addEventListener("click",function(){
+    container5.classList.remove("show-container5");
+});
+const jk = document.querySelector(".DueDate");
+    const container6 = document.querySelector(".container6");
+    const close6 = document.querySelector(".closebutton6");
+    jk.addEventListener("click",function(){
+    container6.classList.add("show-container6");
+});
+close6.addEventListener("click",function(){
+    container6.classList.remove("show-container6");
+});
+
+const ven = document.querySelector(".CentralIntelligence");
+    const container7 = document.querySelector(".container7");
+    const close7 = document.querySelector(".closebutton7");
+    ven.addEventListener("click",function(){
+    container7.classList.add("show-container7");
+});
+close7.addEventListener("click",function(){
+    container7.classList.remove("show-container7");
+});
+
+const tsl = document.querySelector(".RushHour");
+    const container8 = document.querySelector(".container8");
+    const close8 = document.querySelector(".closebutton8");
+    tsl.addEventListener("click",function(){
+    container8.classList.add("show-container8");
+});
+close8.addEventListener("click",function(){
+    container8.classList.remove("show-container8");
+});
+
+const pa = document.querySelector(".JumpStreet");
+    const container9 = document.querySelector(".container9");
+    const close9 = document.querySelector(".closebutton9");
+    pa.addEventListener("click",function(){
+    container9.classList.add("show-container9");
+});
+close9.addEventListener("click",function(){
+    container9.classList.remove("show-container9");
+});
+
+</script>
+</html>

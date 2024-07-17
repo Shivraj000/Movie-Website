@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <title>crime</title>
+    <style>
+        *{
+            font-family: "Ubuntu", sans-serif;
+        }
+    .backgroundvideo{
+    
+    position:fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(8px);
+    
+
+    }
+    .pics{
+        position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    row-gap: 80px;
+    top: 40%;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5%;
+}
+img{
+        top: 10%;
+        width: 200px;
+        height: 250px;
+        border: 4px solid rgb(252, 186, 186);
+        box-shadow: 0 0 15px  red;
+    }
+    .poster{
+        border: 4px solid rgb(252, 186, 186);
+        box-shadow: 0 0 15px  red;
+    }
+    .poster:hover{
+    
+        box-shadow: 0 0 15px  rgb(245, 157, 32);
+        transform: scale(1);
+    }
+    .poster{
+        box-shadow: 0 0 15px rgb(245, 157, 32);
+    }
+    p{
+        background-color: white;
+        color:  black;
+        font-weight: bolder;
+        border: 2px solid black;
+    }
+    .pics{
+        padding-top: 10%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 25px;
+    }
+    .pics p{
+        margin-top: 0%;
+    }
+    p:hover{
+        border: 2px solid black;
+    }
+    img:hover{
+        border: 4px solid rgb(212, 245, 163);
+        cursor: pointer;
+        box-shadow: 0 0 20px rgb(217, 246, 173);
+        transform: scale(1.14);
+    }
+
+    .text{
+            position: relative;
+            color: white;
+        }
+        .container{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container{
+        transform: translate(0,0);
+            
+        }
+        .container{
+            transition: 0.4s;
+        }
+        .container2{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container2{
+        transform: translate(0,0);
+            
+        }
+        .container2{
+            transition: 0.4s;
+        }
+        .container3{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 7%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container3{
+        transform: translate(0,0);
+            
+        }
+        .container3{
+            transition: 0.4s;
+        }
+        .container4{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container4{
+        transform: translate(0,0);
+            
+        }
+        .container4{
+            transition: 0.4s;
+        }
+        .container5{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 37%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container5{
+        transform: translate(0,0);
+            
+        }
+        .container5{
+            transition: 0.4s;
+        }
+        .container6{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 31%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-200%);
+
+        }
+        .show-container6{
+        transform: translate(0,0);
+            
+        }
+        .container6{
+            transition: 0.4s;
+        }
+        .container7{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+
+        }
+        .show-container7{
+        transform: translate(0,0);
+            
+        }
+        .container7{
+            transition: 0.4s;
+        }
+        .container8{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+
+        }
+        .show-container8{
+        transform: translate(0,0);
+            
+        }
+        .container8{
+            transition: 0.4s;
+        }
+        .container9{
+            position: absolute;
+            display: flex;
+            width: 80%;
+            height: 35%;
+            top: 59%;
+            border: 9px solid black;
+            background-color: black;
+            left: 9%;
+        transform: translate(0,-300%);
+
+        }
+        .show-container9{
+        transform: translate(0,0);
+            
+        }
+        .container9{
+            transition: 0.4s;
+        }
+        .text{
+            padding-top: 2%;
+        
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        button{
+            margin-inline: 10px;
+        }
+        .container img{
+            border: 4px solid white;
+        }
+        .container2 img{
+            border: 4px solid white;
+        }
+        .container3 img{
+            border: 4px solid white;
+        }
+        .container4 img{
+            border: 4px solid white;
+        }
+        .container5 img{
+            border: 4px solid white;
+        }
+        .container6 img{
+            border: 4px solid white;
+        }
+        .container7 img{
+            border: 4px solid white;
+        }
+        .container8 img{
+            border: 4px solid white;
+        }
+        .container9 img{
+            border: 4px solid white;
+        }
+        .watchbutton button{
+            line-height: 20px;
+            border: 2px solid black;
+            font-weight: bold;
+            background-color: lightgreen;
+            width: 200px;
+        }
+        button:hover{
+    background-color: rgb(84, 235, 235);
+}
+        .text h3{
+            color: greenyellow;
+           
+        }
+    .text h2
+    {   font-size: 50px;
+        color: darkcyan;
+        font-weight: bolder;
+    }
+    .container7 .text h2{
+        font-size: 40px;
+    }
+    .closebutton {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton2 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton3 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton4 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton5 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton6 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton7 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton8 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .closebutton9 {
+        width: 100px;
+        line-height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+   .poster{
+    
+    height: 370px;
+    width: 390px;
+    margin-top: 2%;
+    
+   }
+   .header{
+        position: absolute;
+        top: 0.5%;
+        color: black;
+        font-size: 20px;
+        display: flex;
+        font-weight: bolder;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        filter: blur(0);
+        z-index: 1;
+        left: 19%;
+        background-color: aqua;
+        }
+        button{
+        box-shadow: 0 0 5px  white;
+    }
+    p{
+        box-shadow: 0 0 30px black;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="header">NOTE: PLEASE DOWNLOAD THE MOVIE TO ACCESS MULTIPLE AUDIO TRACK</div>
+
+    <div >
+        <video class="backgroundvideo" autoplay loop muted  src="https://videos.pexels.com/video-files/7714093/7714093-uhd_2560_1440_30fps.mp4"  ></video>
+    </div>
+    <div class="pics">
+        <div ><img class="TheGodfather" src="https://static1.squarespace.com/static/51f10800e4b01bb187e47d39/51f10800e4b01bb187e47d41/51f10e19e4b042671f329d1c/1379964848707/GodfatherW.jpg" alt="" >   <p>The Godfather</p>
+        </div>
+        <div > <img class="Goodfellas" src="https://image.tmdb.org/t/p/original/tch5eikHtOcfgRlQP1cOPeFXoFi.jpg" alt="">
+        <p>Goodfellas</p></div>
+        <div > <img class="Scarface"  src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2023/02/IMG_0861-scaled.jpeg" alt=""><p>Scarface</p>
+        </div>
+        <div > <img  class="TaxiDriver" src="https://image.tmdb.org/t/p/original/5EduOlOAPX1t9FslccJvILbv8co.jpg" alt="">
+        <p>Taxi Driver</p></div>
+        <div ><img class="Satya"  src="https://flxt.tmsimg.com/assets/p80462_p_v10_aa.jpg" alt="">
+        <p>Satya</p></div>
+        <div ><img class="Casino" src="https://www.dvdsreleasedates.com/posters/800/C/Casino-1995-movie-poster.jpg" alt=""><p>Casino</p>
+            
+        </div>
+
+        <div > <img class="GangsofWasseypur" src="http://www.topteny.com/wp-content/uploads/2014/11/Gangs-of-Wasseypur.jpg?x38733" alt="">
+            <p>Gangs of Wasseypur
+            </p></div>
+            <div ><img class="TheIrishman" src="https://www.assignmentx.com/wp-content/uploads/2015/11/LEGEND-movie-poster2.jpg" alt="">
+            <p>Legend </p></div>
+            <div ><img class="RamanRaghav2" src="https://3.bp.blogspot.com/-uPPgDmDfU3c/V2y33OH0ncI/AAAAAAAARMw/oD4qos8ZnWcocl0SdLQDHi-oLxXV4x1cwCLcB/s1600/raman-raghav-2.0.jpg" alt=""><p>Raman Raghav 2.0</p>
+
+
+
+
+
+                <div class="container">
+                    <img class="poster" src="https://1.bp.blogspot.com/-5A46hyz-axE/Xm4TFV55ORI/AAAAAAAB2U0/cpdS-dhuQT4Qy9WPgjcxRl-gyXoW9HY8gCLcBGAsYHQ/s1600/6195-the-godfather-1280x800-movie-wallpaper.png" alt=""  >
+                    <div class="text">
+                    <h1>
+                    ABOUT THE MOVIE
+                    </h1>
+                    <h2>The Godfather</h2>
+                    <h3>
+                        Crime boss Vito Corleone and his sons rule their New York empire with mafia justice.<br>
+                    Release date: March 24, 1972<br>
+                    Director: Francis Ford Coppola<br>
+                    </h3>
+                    <div class="watchbutton">
+                    <a href="https://drive.google.com/file/d/1GJEO9dYPsTErNSismIPWGt0pxaKs9v-C/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                    </div>
+                    <div class="close">
+                    <button class="closebutton">CLOSE</button> </a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="container2">
+                        <img class="poster" src="https://image.tmdb.org/t/p/original/bTZ1plf5045xQU3AfG8K3vCqJE1.jpg" alt=""  >
+                        <div class="text">
+                        <h1>
+                        ABOUT THE MOVIE
+                        </h1>
+                        <h2>Goodfellas</h2>
+                        <h3>
+                            An Irish-Italian hoodlum joins the 1950s New York Mafia but it is not what he had expected. <br>
+                        Release date: July 31, 2019<br>
+                        Director:   Martin Scorsese<br>
+                        </h3>
+                        <div class="watchbutton">
+                        <a href="https://drive.google.com/file/d/1Iwa_I22-NaUWNnA76YBOYcLx7anFbKU1/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                        </div>
+                        <div class="close2">
+                        <button class="closebutton2">CLOSE</button> </a>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="container3">
+                            <img class="poster" src="https://a.1stdibscdn.com/archivesE/upload/1722654/f_50796331489413353220/PC0634_org_master.jpg" alt=""  >
+                            <div class="text">
+                            <h1>
+                            ABOUT THE MOVIE
+                            </h1>
+                            <h2>Scarface</h2>
+                            <h3>
+                                Brutal Cuban refugee Tony Montana (Al Pacino) becomes the cocaine king of 1980s Miami. <br>
+                            Release date:  November 5, 2013<br>
+                            Director:   Brian De Palma<br>
+                            </h3>
+                            <div class="watchbutton">
+                            <a href="https://drive.google.com/file/d/1cfz4PMcZnKSdLXGq2JzygroUwY1yjtzb/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                            </div>
+                            <div class="close3">
+                            <button class="closebutton3">CLOSE</button> </a>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="container4">
+                                <img class="poster" src="https://johnsneaker.com/wp-content/uploads/2021/06/il_fullxfull.2368513847_2hh5-scaled-1-1448x2048.jpg"  >
+                                <div class="text">
+                                <h1>
+                                ABOUT THE MOVIE
+                                </h1>
+                                <h2>Taxi Driver</h2>
+                                <h3>
+                                    A disturbed New York cabby (Robert De Niro) befriends a teen hooker (Jodie Foster).<br>
+                                Release date:  March 13, 1978<br>
+                                Director:   Martin Scorsese<br>
+                                </h3>
+                                <div class="watchbutton">
+                                <a href="https://drive.google.com/file/d/188U0Gr2-nywLK6SJQsbOvSHPLGKLQdnn/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                </div>
+                                <div class="close4">
+                                <button class="closebutton4">CLOSE</button> </a>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="container5">
+                                    <img class="poster" src="https://i.ytimg.com/vi/tQ7gMwmnLT0/maxresdefault.jpg"  >
+                                    <div class="text">
+                                    <h1>
+                                    ABOUT THE MOVIE
+                                    </h1>
+                                    <h2>Satya</h2>
+                                    <h3>
+                                        An East Indian gangster reflects on his lifestyle after he falls in love.<br>
+                                    Release date: July 3, 1998<br>
+                                    Director:   Ram Gopal Varma<br>
+                                    </h3>
+                                    <div class="watchbutton">
+                                    <a href="https://drive.google.com/file/d/1oKaQvdCJiSPHDanF9s436HOdaqPwZeka/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                    </div>
+                                    <div class="close5">
+                                    <button class="closebutton5">CLOSE</button> </a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="container6">
+                                        <img class="poster" src="http://hnmag.ca/wp-content/uploads/2019/04/casino.png"  >
+                                        <div class="text">
+                                        <h1>
+                                        ABOUT THE MOVIE
+                                        </h1>
+                                        <h2>Casino</h2>
+                                        <h3>
+                                            A bookie (Robert De Niro) and his pal (Joe Pesci) make a Las Vegas casino an empire.<br>
+                                        Release date:  November 22, 1995<br>
+                                        Director:  Martin Scorsese<br>
+                                        </h3>
+                                        <div class="watchbutton">
+                                        <a href="https://drive.google.com/file/d/1eZXT8_PPwVyK9HPq__FL0SbNoaL6sg6t/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                        </div>
+                                        <div class="close6">
+                                        <button class="closebutton6">CLOSE</button> </a>
+                                        </div>
+                                        </div>
+                                        </div>       
+                                        <div class="container7">
+                                            <img class="poster" src="http://blastatrumpet.files.wordpress.com/2012/06/gangs_of_wasseypur_poster.jpg"  >
+                                            <div class="text">
+                                            <h1>
+                                            ABOUT THE MOVIE
+                                            </h1>
+                                            <h2>Gangs of Wasseypur(Part-1)</h2>
+                                            <h3>
+                                                A gangster (Manoj Bajpayee) clashes with the mining kingpin who killed his father (Jaideep Ahlawat).<br>
+                                            Release date:  June 22, 2012<br>
+                                            Director:   Anurag Kashyap<br>
+                                            </h3>
+                                            <div class="watchbutton">
+                                            <a href="https://drive.google.com/file/d/19j-3xSp1yZmT3t_nfWL3wzVUa1QXQNMf/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                            </div>
+                                            <div class="close7">
+                                            <button class="closebutton7">CLOSE</button> </a>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        <div class="container8">
+                                                <img class="poster" src="http://fr.web.img2.acsta.net/pictures/15/12/02/14/56/399325.jpg"  >
+                                                <div class="text">
+                                                <h1>
+                                                ABOUT THE MOVIE
+                                                </h1>
+                                                <h2>Legend</h2>
+                                                <h3>
+                                                    Twin brothers Reggie (Tom Hardy) and Ronnie Kray rule the London underworld in the 1960s.<br>
+                                                Release date:  December 4, 2015<br>
+                                                Director:     Brian Helgeland<br>
+                                                </h3>
+                                                <div class="watchbutton">
+                                                <a href="https://drive.google.com/file/d/1ekhQZ8RJf2gciGEjMHgXdR6OV5w0oUeA/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                </div>
+                                                <div class="close8">
+                                                <button class="closebutton8">CLOSE</button> </a>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <div class="container9">
+                                                    <img class="poster" src="https://d229kpbsb5jevy.cloudfront.net/zee/resources/0-0-8143/list/1170x658/1170x658withlogo74972223.jpg"  >
+                                                    <div class="text">
+                                                    <h1>
+                                                    ABOUT THE MOVIE
+                                                    </h1>
+                                                    <h2>Raman Raghav 2.0</h2>
+                                                    <h3>
+                                                        A serial killer stalks the drug-addicted detective who's investigating his grisly murders. <br>
+                                                    Release date:  June 24, 2016<br>
+                                                    Director:   Anurag Kashyap<br>
+                                                    </h3>
+                                                    <div class="watchbutton">
+                                                    <a href="https://drive.google.com/file/d/12ivcxjIcJZ4QvnXcAAJvS5csrfpWopTu/view?usp=sharing"> <button>WATCH ONLINE OR DOWNLOAD</button> </a>
+                                                    </div>
+                                                    <div class="close9">
+                                                    <button class="closebutton9">CLOSE</button> </a>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+
+        
+</body>
+<script>
+    const has = document.querySelector(".TheGodfather");
+    const container = document.querySelector(".container");
+    const close = document.querySelector(".closebutton");
+    has.addEventListener("click",function(){
+    container.classList.add("show-container");
+});
+close.addEventListener("click",function(){
+    container.classList.remove("show-container");
+});
+const jk = document.querySelector(".Goodfellas");
+    const container2 = document.querySelector(".container2");
+    const close2 = document.querySelector(".closebutton2");
+    jk.addEventListener("click",function(){
+    container2.classList.add("show-container2");
+});
+close2.addEventListener("click",function(){
+    container2.classList.remove("show-container2");
+});
+
+const mf = document.querySelector(".Scarface");
+    const container3 = document.querySelector(".container3");
+    const close3 = document.querySelector(".closebutton3");
+    mf.addEventListener("click",function(){
+    container3.classList.add("show-container3");
+});
+close3.addEventListener("click",function(){
+    container3.classList.remove("show-container3");
+});
+const mm = document.querySelector(".TaxiDriver");
+    const container4 = document.querySelector(".container4");
+    const close4 = document.querySelector(".closebutton4");
+    mm.addEventListener("click",function(){
+    container4.classList.add("show-container4");
+});
+close4.addEventListener("click",function(){
+    container4.classList.remove("show-container4");
+});
+const civil = document.querySelector(".Satya");
+    const container5 = document.querySelector(".container5");
+    const close5 = document.querySelector(".closebutton5");
+    civil.addEventListener("click",function(){
+    container5.classList.add("show-container5");
+});
+close5.addEventListener("click",function(){
+    container5.classList.remove("show-container5");
+});
+const three = document.querySelector(".Casino");
+    const container6 = document.querySelector(".container6");
+    const close6 = document.querySelector(".closebutton6");
+    three.addEventListener("click",function(){
+    container6.classList.add("show-container6");
+});
+close6.addEventListener("click",function(){
+    container6.classList.remove("show-container6");
+});
+
+const Kanddd = document.querySelector(".GangsofWasseypur");
+    const container7 = document.querySelector(".container7");
+    const close7 = document.querySelector(".closebutton7");
+    Kanddd.addEventListener("click",function(){
+    container7.classList.add("show-container7");
+});
+close7.addEventListener("click",function(){
+    container7.classList.remove("show-container7");
+});
+
+const exp = document.querySelector(".TheIrishman");
+    const container8 = document.querySelector(".container8");
+    const close8 = document.querySelector(".closebutton8");
+    exp.addEventListener("click",function(){
+    container8.classList.add("show-container8");
+});
+close8.addEventListener("click",function(){
+    container8.classList.remove("show-container8");
+});
+
+const ext = document.querySelector(".RamanRaghav2");
+    const container9 = document.querySelector(".container9");
+    const close9 = document.querySelector(".closebutton9");
+    ext.addEventListener("click",function(){
+    container9.classList.add("show-container9");
+});
+close9.addEventListener("click",function(){
+    container9.classList.remove("show-container9");
+});
+
+</script>
+</html>
